@@ -29,7 +29,7 @@ export const TextContainer = styled.div`
 
 export const NameText = styled.div`
   -webkit-font-smoothing: antialiased;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   padding-bottom: 5px;
   font-weight: 500;
   color: #fefffe;
@@ -37,11 +37,13 @@ export const NameText = styled.div`
   span {
     color: #b3dec1;
   }
-  @media (max-width: 900px) {
-    font-size: 3.5rem;
+  @media (max-width: 950px) {
+    font-size: 3rem;
   }
-
+  @media (max-width: 900px) {
+    font-size: 2.5rem;
+  }
   @media (max-width: 600px) {
-    font-size: 2.8rem;
+    font-size: 2rem;
   }
 `;
