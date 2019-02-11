@@ -1,5 +1,5 @@
-import React from "react";
-import { CustomButton } from "./ButtonStyles";
+import React from 'react';
+import { CustomButton } from './ButtonStyles';
 
 const NavButton = props => {
   let btnName = props.name;

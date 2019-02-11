@@ -37,7 +37,7 @@ class About extends Component {
               <ProfilePic src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxSValmtOKk8mJlY6NrJmmpUFj07emXVnYtnDL5bzkn48qRne" />
               <BioTextWrapper>
                 <BioText>
-                  Hello. I'm John, a web developer in San Francisco. I strive to
+                  Hello. I'm John, a web developer in San Diego. I strive to
                   learn, improve and challenge myself every day. What gets me up
                   each morning is knowing the website i create today is better
                   than the website I created yesterday. That is what keeps me

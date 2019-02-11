@@ -5,7 +5,7 @@ export const NavBarContainer = styled.div`
   height: 50px;
   width: 100%;
   background: #182327;
-  border-bottom: 3px solid #9d967c;
+  border-bottom: 3px solid #b3dec1;
   font-family: "Arvo", serif;
 `;
 
@@ -26,12 +26,12 @@ export const NavLinkWrapper = styled.div`
 `;
 
 export const NavLink = styled.div`
-  color: #9d967c;
+  color: #b3dec1;
   font-weight: 600;
 
   &:hover {
     cursor: pointer;
-    color: #fffdff;
+    color: #fefffe;
   }
 
   @media (max-width: 800px) {

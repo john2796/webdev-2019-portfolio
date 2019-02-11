@@ -1,73 +1,73 @@
-import React, { Component } from "react";
-import "./NavBar.css";
-import { Element, scroller, Link } from "react-scroll";
-import MediaQuery from "react-responsive";
-import { Dropdown } from "reactstrap";
+import React, { Component } from 'react';
+import './NavBar.css';
+import { Element, scroller, Link } from 'react-scroll';
+import MediaQuery from 'react-responsive';
+import { Dropdown } from 'reactstrap';
 
 import {
   NavBarContainer,
   NavLink,
   NavLinkWrapper,
   Hamburger,
-  DropdownMenuWrapper
-} from "./NavBarStyles";
+  DropdownMenuWrapper,
+} from './NavBarStyles';
 
 class NavBar extends Component {
   state = {
-    dropdownOpen: false
+    dropdownOpen: false,
   };
 
   toggle = () => {
     this.setState(prevState => ({
-      dropdownOpen: !prevState.dropdownOpen
+      dropdownOpen: !prevState.dropdownOpen,
     }));
   };
 
   smoothScrollHome = () => {
-    scroller.scrollTo("Home", {
+    scroller.scrollTo('Home', {
       duration: 500,
       delay: 1,
-      smooth: true
+      smooth: true,
     });
 
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   };
 
   smoothScrollAbout = () => {
-    scroller.scrollTo("About", {
+    scroller.scrollTo('About', {
       duration: 500,
       delay: 1,
-      smooth: true
+      smooth: true,
     });
 
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   };
 
   smoothScrollProjects = () => {
-    scroller.scrollTo("Projects", {
+    scroller.scrollTo('Projects', {
       duration: 500,
       delay: 1,
-      smooth: true
+      smooth: true,
     });
 
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   };
 
   smoothScrollContact = () => {
-    scroller.scrollTo("Contact", {
+    scroller.scrollTo('Contact', {
       duration: 500,
       delay: 1,
-      smooth: true
+      smooth: true,
     });
 
     this.setState({
-      dropdownOpen: !this.state.dropdownOpen
+      dropdownOpen: !this.state.dropdownOpen,
     });
   };
 

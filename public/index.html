@@ -15,7 +15,6 @@
       content="The portfolio of full-stack developer John Benedict Miranda"
     />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!-- font awesome -->
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
@@ -28,5 +27,9 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" /> <input type="email" name="email" />
+      <textarea name="message"></textarea>
+    </form>
   </body>
 </html>

@@ -33,7 +33,7 @@ export const AboutSubHeader = styled.div`
   font-weight: 600;
   color: #444649;
   opacity: 0.7;
-  margin-top: 60px;
+  margin-top: 100px;
 
   @media (max-width: 600px) {
     font-size: 1.4rem;
@@ -45,6 +45,7 @@ export const IconContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 60px;
+  border: 1px solid red;
 
   @media (max-width: 600px) {
     margin-top: 35px;
@@ -59,7 +60,7 @@ export const IconTextWrapper = styled.div`
   align-items: center;
   padding: 10px 25px;
 
-  @media (max-width: 600px) {
+  @media (max-width: 900px) {
     max-width: 190px;
   }
 `;
@@ -108,8 +109,8 @@ export const BioWrapper = styled.div`
 `;
 
 export const ProfilePic = styled.img`
-  width: 200px;
-  border-radius: 50%;
+  width: 200px
+  border-radius: 50%
   border: 3px solid #444649;
   margin: 0 35px 20px 35px;
 `;

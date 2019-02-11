@@ -6,8 +6,8 @@ export const HomeContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Arvo:400,700");
-  font-family: "Arvo", serif;
+  @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
+  font-family: "Roboto Slab", serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -31,19 +31,17 @@ export const NameText = styled.div`
   -webkit-font-smoothing: antialiased;
   font-size: 4.5rem;
   padding-bottom: 5px;
-  font-weight: 700;
-  color: #9d967c;
+  font-weight: 500;
+  color: #fefffe;
   line-height: 1.2;
+  span {
+    color: #b3dec1;
+  }
+  @media (max-width: 900px) {
+    font-size: 3.5rem;
+  }
 
   @media (max-width: 600px) {
     font-size: 2.8rem;
-  }
-`;
-export const JobText = styled.div`
-  font-size: 3rem;
-  color: #c0c0c0;
-
-  @media (max-width: 600px) {
-    font-size: 1.8rem;
   }
 `;
