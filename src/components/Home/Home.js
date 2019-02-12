@@ -35,9 +35,9 @@ class Home extends Component {
               name="Explore"
               color="#c0c0c0"
               border="2px solid #c0c0c0"
-              bgColor="#9d967c"
-              hoverFontColor="#182327"
-              borderColor="#9d967c"
+              bgColor="#131928"
+              hoverFontColor="#FEFFFE"
+              borderColor="#E5FCF5"
               onClick={this.smoothScroll}
               fontSize="1.4rem"
               width="160px"

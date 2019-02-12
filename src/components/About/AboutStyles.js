@@ -2,8 +2,7 @@ import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   background: #fffdff;
-  font-family: "Roboto Slab", serif;
-
+  font-family: "Arvo", serif;
   padding: 100px 0;
 `;
 
@@ -16,35 +15,26 @@ export const ContentWrapper = styled.div`
 `;
 
 export const AboutHeader = styled.div`
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #444649;
-  opacity: 0.9;
-
-  padding: 0 0 40px 0;
-
+  color: #131928;
+  margin-bottom: 100px;
   @media (max-width: 600px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
-`;
-
-export const AboutSubHeader = styled.div`
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #444649;
-  opacity: 0.7;
-  margin-top: 100px;
-
-  @media (max-width: 600px) {
-    font-size: 1.4rem;
+  .header-bar {
+    width: 70px;
+    height: 4px;
+    background: #444649;
+    margin: 0 auto;
   }
 `;
 
 export const IconContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 60px;
+  justify-content: space-around;
+  margin-bottom: 100px;
   border: 1px solid red;
 
   @media (max-width: 600px) {
@@ -61,42 +51,36 @@ export const IconTextWrapper = styled.div`
   padding: 10px 25px;
 
   @media (max-width: 900px) {
-    max-width: 190px;
+    max-width: 290px;
   }
 `;
 
 export const IconHeader = styled.div`
-  color: #444649;
-  opacity: 0.7;
-  font-size: 1.25rem;
+  color: #131928;
+  opacity: 0.8;
+  font-size: 1.4rem;
   font-weight: 600;
-
+  margin-top: 5px;
   @media (max-width: 600px) {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 `;
-
 export const IconText = styled.div`
   text-align: center;
   color: #616161;
   padding-top: 5px;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 
   @media (max-width: 600px) {
-    font-size: 0.85rem;
+    font-size: 1rem;
   }
 `;
 
 export const Icon = styled.i`
-  color: #444649;
-  /* padding: 5px 80px; */
-  opacity: 0.9;
-  font-size: 5em;
-
-  @media (max-width: 600px) {
-    font-size: 4em;
-    margin-top: 29px;
-  }
+  color: #fefffe;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const BioWrapper = styled.div`
@@ -109,8 +93,8 @@ export const BioWrapper = styled.div`
 `;
 
 export const ProfilePic = styled.img`
-  width: 200px
-  border-radius: 50%
+  width: 200px;
+  border-radius: 50%;
   border: 3px solid #444649;
   margin: 0 35px 20px 35px;
 `;
@@ -139,5 +123,40 @@ export const BioText = styled.div`
   @media (max-width: 600px) {
     font-size: 1.1rem;
     text-align: center;
+  }
+`;
+
+export const Hexagon = styled.div`
+  position: relative;
+  width: 120px;
+  height: 69.28px;
+  background-color: #b3dec1;
+  margin: 34.64px 0;
+
+  &:before,
+  &:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+  }
+
+  &:before {
+    bottom: 100%;
+    border-bottom: 34.64px solid #b3dec1;
+  }
+
+  &:after {
+    top: 100%;
+    width: 0;
+    border-top: 34.64px solid #b3dec1;
+  }
+  i {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white !important;
+    font-size: 3rem;
   }
 `;

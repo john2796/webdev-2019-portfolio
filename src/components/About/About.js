@@ -7,7 +7,6 @@ import {
   AboutContainer,
   ContentWrapper,
   AboutHeader,
-  AboutSubHeader,
   IconContainer,
   Icon,
   IconTextWrapper,
@@ -16,7 +15,8 @@ import {
   BioWrapper,
   BioTextWrapper,
   ProfilePic,
-  BioText
+  BioText,
+  Hexagon
 } from "./AboutStyles";
 class About extends Component {
   state = {
@@ -32,7 +32,45 @@ class About extends Component {
       <Element name="About">
         <AboutContainer>
           <ContentWrapper>
-            <AboutHeader>About</AboutHeader>
+            <AboutHeader>
+              ABOUT
+              <div className="header-bar" />
+            </AboutHeader>
+            <IconContainer>
+              <IconTextWrapper>
+                <Hexagon>
+                  <Icon className="fas fa-tachometer-alt" />
+                </Hexagon>
+                <IconHeader>Performant</IconHeader>
+                <IconText>
+                  Blazing fast load times & lag-free interaction
+                </IconText>
+              </IconTextWrapper>
+              <IconTextWrapper>
+                <Hexagon>
+                  <Icon className="fas fa-mobile-alt" />
+                </Hexagon>
+                <IconHeader>Responsive</IconHeader>
+                <IconText>Sleek & elegant designs for any device size</IconText>
+              </IconTextWrapper>
+              <IconTextWrapper>
+                <Hexagon>
+                  <Icon className="fas fa-lightbulb" />
+                </Hexagon>
+
+                <IconHeader>Intuitive</IconHeader>
+                <IconText>User-friendly, dynamic & accessible UI/UX</IconText>
+              </IconTextWrapper>
+
+              <IconTextWrapper>
+                <Hexagon>
+                  <Icon className="fas fa-rocket" />
+                </Hexagon>
+                <IconHeader>Scalable</IconHeader>
+                <IconText>Unlimited user base growth potential</IconText>
+              </IconTextWrapper>
+            </IconContainer>
+
             <BioWrapper>
               <ProfilePic src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxSValmtOKk8mJlY6NrJmmpUFj07emXVnYtnDL5bzkn48qRne" />
               <BioTextWrapper>
@@ -57,32 +95,6 @@ class About extends Component {
                 />
               </BioTextWrapper>
             </BioWrapper>
-            <AboutSubHeader>I build apps that are</AboutSubHeader>
-            <IconContainer>
-              <IconTextWrapper>
-                <Icon className="fas fa-tachometer-alt" />
-                <IconHeader>Performant</IconHeader>
-                <IconText>
-                  Blazing fast load times & lag-free interaction
-                </IconText>
-              </IconTextWrapper>
-              <IconTextWrapper>
-                <Icon className="fas fa-mobile-alt" />
-                <IconHeader>Responsive</IconHeader>
-                <IconText>Sleek & elegant designs for any device size</IconText>
-              </IconTextWrapper>
-              <IconTextWrapper>
-                <Icon className="fas fa-lightbulb" />
-                <IconHeader>Intuitive</IconHeader>
-                <IconText>User-friendly, dynamic & accessible UI/UX</IconText>
-              </IconTextWrapper>
-
-              <IconTextWrapper>
-                <Icon className="fas fa-rocket" />
-                <IconHeader>Scalable</IconHeader>
-                <IconText>Unlimited user base growth potential</IconText>
-              </IconTextWrapper>
-            </IconContainer>
           </ContentWrapper>
           <PDF toggle={this.togglePDF} isOpen={this.state.modal} />
         </AboutContainer>

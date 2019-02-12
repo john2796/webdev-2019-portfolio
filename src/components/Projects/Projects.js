@@ -80,9 +80,7 @@ class Projects extends Component {
         <ProjectContainer>
           <ContentWrapper>
             <ProjectHeader>Portfolio</ProjectHeader>
-            <ProjectSubHeader>
-              Click on a project to learn more
-            </ProjectSubHeader>
+            <ProjectSubHeader>PROJECTS</ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
                 src={anchored}
