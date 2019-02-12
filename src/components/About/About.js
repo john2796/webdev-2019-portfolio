@@ -83,10 +83,10 @@ class About extends Component {
                 </BioText>
                 <Button
                   name="View Resume"
-                  color="#444649"
+                  color="#131928"
                   border="2px solid #444649"
-                  hoverFontColor="#fffdff"
-                  bgColor="#444649"
+                  hoverFontColor="#FEFFFE"
+                  bgColor="#131928"
                   borderColor="#444649"
                   width="180px"
                   fontSize="1.2rem"

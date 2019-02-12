@@ -132,10 +132,10 @@ class Contact extends Component {
               <Button
                 name="Send Message"
                 color="#c0c0c0"
-                border="2px solid #c0c0c0"
-                bgColor="#9d967c"
-                hoverFontColor="#182327"
-                borderColor="#9d967c"
+                border="2px solid #E5FCF5"
+                bgColor="#131928"
+                hoverFontColor="#FEFFFE"
+                borderColor="#B3DEC1"
                 width="180px"
                 fontSize="1.2rem"
                 onClick={this.handleSubmit}

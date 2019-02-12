@@ -297,11 +297,7 @@ class Projects extends Component {
           toggle={this.toggleReactMovies}
         >
           <ModalBody>
-            <a
-              href="https://react-movies-jeremy-jones.netlify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href="/" target="_blank" rel="noopener noreferrer">
               <FullSize src={reactMovies} style={fullSize} alt="React Movies" />
             </a>
           </ModalBody>
@@ -321,16 +317,10 @@ class Projects extends Component {
             </ModalTextWrapper>
           </ModalHeader>
           <ModalFooter toggle={this.toggleReactMovies}>
-            <Astyle
-              href="https://react-movies-jeremy-jones.netlify.com"
-              target="_blank"
-            >
+            <Astyle href="/" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
-            <Astyle
-              href="https://github.com/crypto-jones/react-movies"
-              target="_blank"
-            >
+            <Astyle href="/" target="_blank">
               <i className="fab fa-github fa-2x" />
             </Astyle>
           </ModalFooter>
