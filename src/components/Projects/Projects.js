@@ -79,8 +79,10 @@ class Projects extends Component {
       <Element name="Projects">
         <ProjectContainer>
           <ContentWrapper>
-            <ProjectHeader>Portfolio</ProjectHeader>
-            <ProjectSubHeader>PROJECTS</ProjectSubHeader>
+            <ProjectSubHeader>
+              PROJECTS
+              <div className="header-bar" />
+            </ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
                 src={anchored}
@@ -217,7 +219,7 @@ class Projects extends Component {
         <Modal isOpen={this.state.modalProfJones} toggle={this.toggleProfJones}>
           <ModalBody>
             <a
-              href="https://www.professorjonesmusic.com"
+              href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -230,23 +232,23 @@ class Projects extends Component {
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
             <ModalTextWrapper>
-              <ModalTitle>Professor Jones Music</ModalTitle>
-              <ModalSubTitle>
-                A modern website for a musical artist
-              </ModalSubTitle>
+              <ModalTitle>The Soul Food & Bistro</ModalTitle>
+              <ModalSubTitle>A modern website for a Restaurant</ModalSubTitle>
               <ModalDescription>
-                ProfessorJonesMusic.com is a site I created to showcase my music
-                as well as my visual art. It was built with React, Express, and
-                Node.js with YouTube, Bandsintown, and Stripe API integration.
+                Miranda Restaurant is a site I created to showcase my passion
+                for food as well as my visual art. Built with React .
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
           <ModalFooter toggle={this.toggleProfJones}>
-            <Astyle href="https://www.professorjonesmusic.com" target="_blank">
+            <Astyle
+              href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
+              target="_blank"
+            >
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
             <Astyle
-              href="https://github.com/crypto-jones/Prof-Jones-Website"
+              href="https://github.com/john2796/portfolio-restaurant-01"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />

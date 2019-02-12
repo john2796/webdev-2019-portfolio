@@ -16,27 +16,20 @@ export const ContentWrapper = styled.div`
   margin: 0 auto;
 `;
 
-export const ProjectHeader = styled.div`
-  text-align: center;
-  font-size: 3rem;
-  font-weight: 600;
-  color: #fffdff;
-  opacity: 0.9;
-
-  @media (max-width: 600px) {
-    font-size: 2.5rem;
-  }
-`;
-
 export const ProjectSubHeader = styled.div`
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #c0c0c0;
-  padding-top: 20px;
+  color: #131928;
+  margin-bottom: 100px auto;
   text-align: center;
-
   @media (max-width: 600px) {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
+  }
+  .header-bar {
+    width: 70px;
+    height: 4px;
+    background: #444649;
+    margin: 0 auto;
   }
 `;
 

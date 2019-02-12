@@ -88,7 +88,10 @@ class Contact extends Component {
         </svg>
         <ContactContainer>
           <ContentWrapper>
-            <ContactHeader>Contact</ContactHeader>
+            <ContactHeader>
+              Contact
+              <div className="header-bar" />
+            </ContactHeader>
             <ContactSubHeader>Want to work together?</ContactSubHeader>
             <ContactForm>
               <Form onSubmit={this.handleSubmit}>

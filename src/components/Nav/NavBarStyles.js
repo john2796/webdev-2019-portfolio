@@ -41,12 +41,13 @@ export const NavLink = styled.div`
 
 export const Hamburger = styled.div`
   font-size: 1.85rem;
-  color: #b3dec1;
+
+  color: #fffdff;
   margin-right: 25px;
 
   &:hover {
     cursor: pointer;
-    color: #fffdff;
+    color: #b3dec1;
   }
 `;
 

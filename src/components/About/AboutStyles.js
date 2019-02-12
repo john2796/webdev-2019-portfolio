@@ -35,8 +35,6 @@ export const IconContainer = styled.div`
   flex-wrap: wrap;
   justify-content: space-around;
   margin-bottom: 100px;
-  border: 1px solid red;
-
   @media (max-width: 600px) {
     margin-top: 35px;
   }
@@ -49,7 +47,6 @@ export const IconTextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 10px 25px;
-
   @media (max-width: 900px) {
     max-width: 290px;
   }
@@ -109,17 +106,22 @@ export const BioTextWrapper = styled.div`
   @media (max-width: 800px) {
     margin: 0;
     align-items: center;
+    justify-content: center;
   }
 `;
 
 export const BioText = styled.div`
   text-align: left;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   font-weight: 500;
   margin-bottom: 5px;
   padding: 0 15px;
   color: #444649;
 
+  @media (max-width: 800px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
   @media (max-width: 600px) {
     font-size: 1.1rem;
     text-align: center;

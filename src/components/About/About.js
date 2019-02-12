@@ -76,11 +76,10 @@ class About extends Component {
               <BioTextWrapper>
                 <BioText>
                   Hello. I'm John, a web developer in San Diego. I strive to
-                  learn, improve and challenge myself every day. What gets me up
-                  each morning is knowing the website i create today is better
-                  than the website I created yesterday. That is what keeps me
-                  going - and I want to work with inspiring people who feel the
-                  same way I do.
+                  learn, improve, and challenge myself every day. What gets me
+                  up each morning is knowing the website I create today is
+                  better than the website I created yesterday. I want to work
+                  with inspiring people who feel the same way I do.
                 </BioText>
                 <Button
                   name="View Resume"

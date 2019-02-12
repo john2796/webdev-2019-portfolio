@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const ContactContainer = styled.div`
   background: #182327;
   padding: 100px 0 60px 0;
-  font-family: "Roboto Slab", serif;
+  font-family: "Arvo", serif;
 `;
 
 export const ContentWrapper = styled.div`
@@ -12,13 +12,19 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ContactHeader = styled.div`
-  text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: 600;
-  color: #9d967c;
-
+  color: #fefffe;
+  text-transform: uppercase;
+  text-align: center;
   @media (max-width: 600px) {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
+  }
+  .header-bar {
+    width: 70px;
+    height: 4px;
+    background: #fefffe;
+    margin: 0 auto;
   }
 `;
 
@@ -66,11 +72,11 @@ export const SocialWrapper = styled.div`
 `;
 
 export const Astyle = styled.a`
-  color: #9d967c;
+  color: #e5fcf5;
   font-size: 2.8em;
 
   &:hover {
-    color: #fffdff;
+    color: #fefffe;
   }
 
   @media (max-width: 600px) {
