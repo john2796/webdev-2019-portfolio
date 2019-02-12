@@ -15,10 +15,13 @@ export const ContentWrapper = styled.div`
 `;
 
 export const AboutHeader = styled.div`
-  font-size: 2.5rem;
   font-weight: 600;
   color: #131928;
   margin-bottom: 100px;
+  font-size: 2.2rem;
+  @media (max-width: 900px) {
+    font-size: 2rem;
+  }
   @media (max-width: 600px) {
     font-size: 1.5rem;
   }

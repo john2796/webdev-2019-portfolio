@@ -12,11 +12,15 @@ export const ContentWrapper = styled.div`
 `;
 
 export const ContactHeader = styled.div`
-  font-size: 2.5rem;
   font-weight: 600;
   color: #fefffe;
   text-transform: uppercase;
   text-align: center;
+  font-size: 2.5rem;
+  font-size: 2.2rem;
+  @media (max-width: 900px) {
+    font-size: 2rem;
+  }
   @media (max-width: 600px) {
     font-size: 1.5rem;
   }
@@ -29,14 +33,17 @@ export const ContactHeader = styled.div`
 `;
 
 export const ContactSubHeader = styled.div`
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 600;
   color: #c0c0c0;
   padding-top: 20px;
   text-align: center;
 
+  @media (max-width: 900px) {
+    font-size: 1.3rem;
+  }
   @media (max-width: 600px) {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 `;
 
