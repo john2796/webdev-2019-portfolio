@@ -1,8 +1,8 @@
 #  https://www.johnbenedictmiranda.com/
 
 ## Full Stack Web Developer 2019 portfolio -  [ John Benedict Miranda ]
-![](</src/assets/08.png)
-
+![](</../assets/08.png)
+![](/08.png)
 React Redux
 =========================
 
