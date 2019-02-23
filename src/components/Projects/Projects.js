@@ -22,8 +22,7 @@ import img2 from "../../assets/02.jpg";
 import img3 from "../../assets/03.jpg";
 import img4 from "../../assets/04.jpg";
 import img7 from "../../assets/07.jpg";
-const img5 =
-  "https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-450w-1037719192.jpg";
+import img5 from "../../assets/05.png";
 
 const thumbSize = { width: "370px", height: "217px" };
 const fullSize = { width: "100%" };
