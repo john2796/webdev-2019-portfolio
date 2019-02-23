@@ -17,13 +17,15 @@ export const ContentWrapper = styled.div`
 export const AboutHeader = styled.div`
   font-weight: 600;
   color: #131928;
-  margin-bottom: 100px;
-  font-size: 2.2rem;
+  margin-bottom: 70px;
+  font-size: 1.8rem;
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 50px;
   }
   @media (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    margin-bottom: 0px;
   }
   .header-bar {
     width: 70px;
@@ -50,8 +52,12 @@ export const IconTextWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 10px 25px;
+
   @media (max-width: 900px) {
     max-width: 290px;
+  }
+  @media (max-width: 600px) {
+    margin-bottom: 20px;
   }
 `;
 
@@ -128,6 +134,7 @@ export const BioText = styled.div`
   @media (max-width: 600px) {
     font-size: 1.1rem;
     text-align: center;
+    margin: 20px 0;
   }
 `;
 

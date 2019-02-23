@@ -16,13 +16,12 @@ export const ContactHeader = styled.div`
   color: #fefffe;
   text-transform: uppercase;
   text-align: center;
-  font-size: 2.5rem;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   @media (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .header-bar {
     width: 70px;

@@ -4,7 +4,6 @@ import { Element } from "react-scroll";
 
 import {
   ProjectContainer,
-  ProjectHeader,
   ProjectSubHeader,
   ThumbnailContainer,
   ContentWrapper,
@@ -18,12 +17,13 @@ import {
   ButtonWrapper,
   ModalFooter
 } from "./ProjectStyles";
-import anchored from "../../assets/01.jpg";
-import cryptoGym from "../../assets/02.jpg";
-import profJones from "../../assets/03.jpg";
-import bcad from "../../assets/04.jpg";
-import reactMovies from "../../assets/05.jpg";
-import walletWatcher from "../../assets/06.jpg";
+import img1 from "../../assets/01.jpg";
+import img2 from "../../assets/02.jpg";
+import img3 from "../../assets/03.jpg";
+import img4 from "../../assets/04.jpg";
+import img7 from "../../assets/07.jpg";
+const img5 =
+  "https://image.shutterstock.com/image-vector/default-ui-image-placeholder-wireframes-450w-1037719192.jpg";
 
 const thumbSize = { width: "370px", height: "217px" };
 const fullSize = { width: "100%" };
@@ -32,10 +32,10 @@ class Projects extends Component {
   state = {
     modalAnchored: false,
     modalCrytpoGym: false,
-    modalProfJones: false,
+    modalProfJb: false,
     modalBCAD: false,
-    modalReactMovies: false,
-    modalWalletWatcher: false
+    modalTwo: false,
+    modalRealEstate: false
   };
 
   toggleAnchored = () => {
@@ -49,10 +49,15 @@ class Projects extends Component {
       modalCrytpoGym: !this.state.modalCrytpoGym
     });
   };
-
-  toggleProfJones = () => {
+  toggleRealEstate = () => {
     this.setState({
-      modalProfJones: !this.state.modalProfJones
+      modalRealEstate: !this.state.modalRealEstate
+    });
+  };
+
+  toggleProfJb = () => {
+    this.setState({
+      modalProfJb: !this.state.modalProfJb
     });
   };
 
@@ -61,16 +66,9 @@ class Projects extends Component {
       modalBCAD: !this.state.modalBCAD
     });
   };
-
-  toggleReactMovies = () => {
+  toggleTwo = () => {
     this.setState({
-      modalReactMovies: !this.state.modalReactMovies
-    });
-  };
-
-  toggleWalletWatcher = () => {
-    this.setState({
-      modalWalletWatcher: !this.state.modalWalletWatcher
+      modalTwo: !this.state.modalTwo
     });
   };
 
@@ -85,45 +83,45 @@ class Projects extends Component {
             </ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
-                src={anchored}
+                src={img7}
+                style={thumbSize}
+                onClick={this.toggleRealEstate}
+                alt="project card"
+              />
+              <Thumbnail
+                src={img3}
+                style={thumbSize}
+                onClick={this.toggleProfJb}
+                alt="project card"
+              />
+              <Thumbnail
+                src={img1}
                 style={thumbSize}
                 onClick={this.toggleAnchored}
-                alt="Anchored"
+                alt="project card"
               />
               <Thumbnail
-                src={cryptoGym}
+                src={img2}
                 style={thumbSize}
                 onClick={this.toggleCryptoGym}
-                alt="CryptoGym"
+                alt="project card"
               />
               <Thumbnail
-                src={profJones}
-                style={thumbSize}
-                onClick={this.toggleProfJones}
-                alt="Professor Jones Music"
-              />
-              <Thumbnail
-                src={bcad}
+                src={img4}
                 style={thumbSize}
                 onClick={this.toggleBCAD}
-                alt="BC/AD"
+                alt="project card"
               />
               <Thumbnail
-                src={reactMovies}
+                src={img5}
                 style={thumbSize}
-                onClick={this.toggleReactMovies}
-                alt="Need to change later"
-              />
-              <Thumbnail
-                src={walletWatcher}
-                style={thumbSize}
-                onClick={this.toggleWalletWatcher}
-                alt="need to change later"
+                onClick={this.toggleTwo}
+                alt="project card"
               />
             </ThumbnailContainer>
             <ButtonWrapper>
               <a
-                href="https://jeremyjones.hackhivebeta.com/"
+                href="https://www.johnbenedictmiranda.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
@@ -131,16 +129,15 @@ class Projects extends Component {
             </ButtonWrapper>
           </ContentWrapper>
         </ProjectContainer>
-
-        {/* Modal Anchored*/}
+        {/* Card modal*/}
         <Modal isOpen={this.state.modalAnchored} toggle={this.toggleAnchored}>
           <ModalBody>
             <a
-              href="https://instagram-clone-lilsgxfc1.now.sh/"
+              href="https://miranda-insta-clone.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={anchored} style={fullSize} alt="Anchored" />
+              <FullSize src={img1} style={fullSize} alt="A Instagram clone" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
@@ -148,27 +145,27 @@ class Projects extends Component {
               <ModalTitle>Instagram</ModalTitle>
               <ModalSubTitle>A Instagram clone</ModalSubTitle>
               <ModalDescription>
-                built with React, Redux, Node.js, Express, and Mlab.
+                built with React, Redux, Node.js, Express, Mongoose, Bycrpyt ,
+                Passport , Passport-jwt.
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
           <ModalFooter toggle={this.toggleAnchored}>
             <Astyle
-              href="https://instagram-clone-lilsgxfc1.now.sh/"
+              href="https://miranda-insta-clone.netlify.com/"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
             <Astyle
-              href="https://github.com/john2796/react-insta-client"
+              href="https://github.com/john2796/React-Insta-Clone-1"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
           </ModalFooter>
         </Modal>
-
-        {/* Modal CryptoGym */}
+        {/* Card modal*/}
         <Modal isOpen={this.state.modalCrytpoGym} toggle={this.toggleCryptoGym}>
           <ModalBody>
             <a
@@ -176,22 +173,20 @@ class Projects extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={cryptoGym} style={fullSize} alt="Crypto Gym" />
+              <FullSize src={img2} style={fullSize} alt="Use My Tool" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
-            <ModalHeader style={{ paddingTop: "0" }}>
-              <ModalTextWrapper>
-                <ModalTitle>Use My Tool</ModalTitle>
-                <ModalSubTitle />
-                <ModalDescription>
-                  It doesn't make sense to purchase many items that are costly.
-                  Instead, you can rent such items from reliable people and
-                  businesses in your local community using the Use My Tool app.
-                  Built with React Bootstrap with Material Design && MERN
-                </ModalDescription>
-              </ModalTextWrapper>
-            </ModalHeader>
+            <ModalTextWrapper>
+              <ModalTitle>Use My Tool</ModalTitle>
+              <ModalSubTitle />
+              <ModalDescription>
+                It doesn't make sense to purchase many items that are costly.
+                Instead, you can rent such items from reliable people and
+                businesses in your local community using the Use My Tool app.
+                Built with React Bootstrap with Material Design && MERN
+              </ModalDescription>
+            </ModalTextWrapper>
           </ModalHeader>
           <ModalFooter toggle={this.toggleCryptoGym}>
             <Astyle
@@ -214,9 +209,8 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-
-        {/* Modal Professor Jones Music */}
-        <Modal isOpen={this.state.modalProfJones} toggle={this.toggleProfJones}>
+        {/* Card modal*/}
+        <Modal isOpen={this.state.modalProfJb} toggle={this.toggleProfJb}>
           <ModalBody>
             <a
               href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
@@ -224,9 +218,9 @@ class Projects extends Component {
               rel="noopener noreferrer"
             >
               <FullSize
-                src={profJones}
+                src={img3}
                 style={fullSize}
-                alt="Professor Jones Music"
+                alt="The Soul Food & Bistro"
               />
             </a>
           </ModalBody>
@@ -240,7 +234,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleProfJones}>
+          <ModalFooter toggle={this.toggleProfJb}>
             <Astyle
               href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
               target="_blank"
@@ -255,8 +249,7 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-
-        {/* Modal BCAD */}
+        {/* Card modal*/}
         <Modal isOpen={this.state.modalBCAD} toggle={this.toggleBCAD}>
           <ModalBody>
             <a
@@ -264,11 +257,7 @@ class Projects extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize
-                src={bcad}
-                style={fullSize}
-                alt="Blockchain Artifact Database"
-              />
+              <FullSize src={img4} style={fullSize} alt="NASA" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
@@ -291,89 +280,84 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-        {/* Modal React Movies */}
-        <Modal
-          isOpen={this.state.modalReactMovies}
-          toggle={this.toggleReactMovies}
-        >
+
+        {/* Card modal*/}
+        <Modal isOpen={this.state.modalTwo} toggle={this.toggleTwo}>
           <ModalBody>
-            <a href="/" target="_blank" rel="noopener noreferrer">
-              <FullSize src={reactMovies} style={fullSize} alt="React Movies" />
+            <a
+              href="https://mytools2019-nc83oebj7.now.sh/register"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize src={img5} style={fullSize} alt="Use My Tool" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
             <ModalTextWrapper>
-              <ModalTitle>React Movies</ModalTitle>
-              <ModalSubTitle>
-                An app that displays details & trailers of films
-              </ModalSubTitle>
-              <ModalDescription>
-                React Movies is a UI-focused app that allows users to search for
-                in real-time any film ever published to the Movie DB with
-                blazing fast rendering. A user can click on the movie card,
-                watch the trailer and get more details. This app was built with
-                React with the Movie Database API integration.
-              </ModalDescription>
+              <ModalTitle>Next Project</ModalTitle>
+              <ModalSubTitle />
+              <ModalDescription>Next Project</ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleReactMovies}>
-            <Astyle href="/" target="_blank">
+          <ModalFooter toggle={this.toggleTwo}>
+            <Astyle
+              href="https://mytools2019-nc83oebj7.now.sh/register"
+              target="_blank"
+            >
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
-            <Astyle href="/" target="_blank">
+            <Astyle
+              href="https://github.com/use-my-tools/Front-End"
+              target="_blank"
+            >
               <i className="fab fa-github fa-2x" />
+            </Astyle>
+            <Astyle
+              href="https://www.youtube.com/watch?v=7SomB_hSfS0&feature=youtu.be"
+              target="_blank"
+            >
+              <i className="fab fa-youtube fa-2x" />
             </Astyle>
           </ModalFooter>
         </Modal>
 
-        {/* Modal WalletWatcher */}
+        {/* Card modal Real Estate*/}
         <Modal
-          isOpen={this.state.modalWalletWatcher}
-          toggle={this.toggleWalletWatcher}
+          isOpen={this.state.modalRealEstate}
+          toggle={this.toggleRealEstate}
         >
           <ModalBody>
             <a
-              href="https://walletwatcher.netlify.com"
+              href="https://miranda-realestate.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize
-                src={walletWatcher}
-                style={fullSize}
-                alt="React Movies"
-              />
+              <FullSize src={img7} style={fullSize} alt="miranda-realestate" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
             <ModalTextWrapper>
-              <ModalTitle>WalletWatcher</ModalTitle>
-              <ModalSubTitle>
-                An app that monitors Ethereum addresses
-              </ModalSubTitle>
+              <ModalTitle>Los Angeles Experts</ModalTitle>
+              <ModalSubTitle />
               <ModalDescription>
-                WalletWatcher was a Lambda School Hackathon 2018 project that
-                was awarded a third place prize and "most likely to become a
-                startup." It allows users to monitor any Ethereum-based address
-                and receive SMS notifications. It was built with React, Express,
-                Node.js, and MongoDB with Twilio and Etherscan API integration.
+                Built with: React.js , google-map-react, node-sass, reacstrap ,
+                bootstrap, redux, redux-thunk, styled-components,
+                react-router-dom
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleWalletWatcher}>
-            <Astyle href="https://walletwatcher.netlify.com" target="_blank">
+          <ModalFooter toggle={this.toggleRealEstate}>
+            <Astyle
+              href="https://miranda-realestate.netlify.com/"
+              target="_blank"
+            >
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
             <Astyle
-              href="https://github.com/wallet-watcher/wallet-watcher"
+              href="https://github.com/john2796/portfolio-003-real-estate"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
-            </Astyle>
-            <Astyle
-              href="https://www.youtube.com/watch?v=DmIB3gslWdg"
-              target="_blank"
-            >
-              <i className="fab fa-youtube fa-2x" />
             </Astyle>
           </ModalFooter>
         </Modal>

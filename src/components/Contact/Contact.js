@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Form, FormGroup, Input } from "reactstrap";
+import { Form, FormGroup, Input, Spinner } from "reactstrap";
 import { Element } from "react-scroll";
+import axios from "axios";
 
 import {
   ContactContainer,
@@ -13,64 +14,47 @@ import {
   Astyle,
   CopyrightText
 } from "./ContactStyles";
-
+import Alert from "react-s-alert";
 import Button from "../Button/Button";
-
-const encode = data => {
-  return Object.keys(data)
-    .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-    .join("&");
-};
-
 class Contact extends Component {
-  state = { name: "", email: "", message: "" };
+  state = { name: "", email: "", message: "", loading: false, errors: {} };
+
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.errors) {
+      this.setState({ errors: nextProps.errors });
+    }
+  }
 
   handleSubmit = e => {
     e.preventDefault();
-
+    this.setState({ loading: true });
     const { name, email, message } = this.state;
-    const valid =
-      name.length > 0 &&
-      email.length > 0 &&
-      email.includes("@") &&
-      email.includes(".") &&
-      message.length > 0;
-
-    if (valid) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: encode({ "form-name": "contact", ...this.state })
+    axios
+      .post("https://jbmiranda-server-01.herokuapp.com/api/contact", {
+        name,
+        email,
+        message
       })
-        .then(() =>
-          alert(
-            `Hey! Thanks for contacting me. I'll get back to you soon as I can.`
-          )
-        )
-        .catch(error =>
-          alert(
-            `Oops! Something went wrong. Contact me at ${
-              process.env.REACT_APP_EMAIL
-            }.`
-          )
+      .then(() => {
+        this.setState({ loading: false });
+      })
+      .then(mail => {
+        console.log(mail);
+        Alert.success(
+          `Hey! Thanks for contacting me. I'll get back to you soon as I can.`
         );
-
-      this.setState({ name: "", email: "", message: "" });
-    } else if (name.length <= 0) {
-      alert("Please enter your name.");
-    } else if (email.length <= 0) {
-      alert("Please enter your email address.");
-    } else if (!email.includes("@") || !email.includes(".")) {
-      alert("Please enter a valid email address.");
-    } else if (message.length <= 0) {
-      alert("Please enter your message.");
-    }
+      })
+      .catch(err => {
+        this.setState({ errors: err.response.data, loading: false });
+      });
+    this.setState({ errors: {}, name: "", email: "", message: "" });
   };
 
-  handleChange = e => this.setState({ [e.target.name]: e.target.value });
+  handleChange = e =>
+    this.setState({ [e.target.name]: e.target.value, errors: {} });
 
   render() {
-    const { name, email, message } = this.state;
+    const { name, email, message, errors } = this.state;
 
     return (
       <Element name="Contact">
@@ -92,6 +76,13 @@ class Contact extends Component {
               Contact
               <div className="header-bar" />
             </ContactHeader>
+            {this.state.loading && (
+              <Spinner
+                md="auto"
+                style={{ margin: "0 auto", display: "block" }}
+                color="success"
+              />
+            )}
             <ContactSubHeader>Want to work together?</ContactSubHeader>
             <ContactForm>
               <Form onSubmit={this.handleSubmit}>
@@ -138,32 +129,49 @@ class Contact extends Component {
                 borderColor="#B3DEC1"
                 width="180px"
                 fontSize="1.2rem"
+                type="submit"
                 onClick={this.handleSubmit}
               />
             </ButtonWrapper>
             <SocialWrapper>
-              <Astyle href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin" />
-              </Astyle>
-
-              <Astyle href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github" />
-              </Astyle>
-
-              <Astyle href="#" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-medium" />
-              </Astyle>
               <Astyle
-                href={`mailto:${process.env.REACT_APP_EMAIL}`}
+                href="https://github.com/john2796"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-envelope" />
+                <i className="fab fa-github" />
+              </Astyle>
+
+              <Astyle
+                href="https://codepen.io/dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-codepen" />
+              </Astyle>
+              <Astyle
+                href="mailto:jbmiranda22796@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="far fa-envelope" />
+              </Astyle>
+              <Astyle
+                href="https://www.linkedin.com/in/john-benedict-miranda-7b2357180/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin-in" />
               </Astyle>
             </SocialWrapper>
             <CopyrightText>John Benedict Miranda ©2019</CopyrightText>
           </ContentWrapper>
         </ContactContainer>
+        <div hidden>
+          {errors.message && Alert.error(`${errors.message}`)}
+          {errors.email && Alert.error(errors.email)}
+          {errors.name && Alert.error(errors.name)}
+        </div>
       </Element>
     );
   }

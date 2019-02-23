@@ -21,12 +21,12 @@ export const ProjectSubHeader = styled.div`
   color: #131928;
   margin-bottom: 100px auto;
   text-align: center;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   @media (max-width: 900px) {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   @media (max-width: 600px) {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
   }
   .header-bar {
     width: 70px;

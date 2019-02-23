@@ -28,7 +28,7 @@ class Home extends Component {
               <NameText>
                 Hello, I'm
                 <span> John Benedict Miranda.</span>
-                <br /> I'm a software engineer
+                <br /> I'm a full stack web developer
               </NameText>
             </TextContainer>
             <NavButton
@@ -39,7 +39,7 @@ class Home extends Component {
               hoverFontColor="#FEFFFE"
               borderColor="#E5FCF5"
               onClick={this.smoothScroll}
-              fontSize="1.4rem"
+              fontSize="1.2rem"
               width="160px"
               mobileFontSize="1.2rem"
               mobileWidth="140px"

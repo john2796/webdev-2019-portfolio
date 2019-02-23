@@ -26,7 +26,7 @@ export const TextContainer = styled.div`
 `;
 export const NameText = styled.div`
   -webkit-font-smoothing: antialiased;
-  font-size: 3rem;
+  font-size: 2.5rem;
   padding-bottom: 5px;
   font-weight: 500;
   color: #fefffe;
@@ -35,9 +35,9 @@ export const NameText = styled.div`
     color: #b3dec1;
   }
   @media (max-width: 900px) {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   @media (max-width: 600px) {
-    font-size: 2rem;
+    font-size: 1.7rem;
   }
 `;
