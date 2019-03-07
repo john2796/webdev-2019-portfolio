@@ -21,8 +21,8 @@ import img1 from "../../assets/01.jpg";
 import img2 from "../../assets/02.jpg";
 import img3 from "../../assets/03.jpg";
 import img4 from "../../assets/04.jpg";
-import img6 from "../../assets/07.jpg";
-import img5 from "../../assets/05.png";
+import img5 from "../../assets/07.jpg";
+import img6 from "../../assets/05.png";
 
 const thumbSize = { width: "370px", height: "217px" };
 const fullSize = { width: "100%" };
@@ -55,9 +55,9 @@ class Projects extends Component {
             </ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
-                src={img6}
+                src={img5}
                 style={thumbSize}
-                onClick={this._toggleHandler('six')}
+                onClick={this._toggleHandler('five')}
                 alt="project card"
               />
               <Thumbnail
@@ -85,9 +85,9 @@ class Projects extends Component {
                 alt="project card"
               />
               <Thumbnail
-                src={img5}
+                src={img6}
                 style={thumbSize}
-                onClick={this._toggleHandler('five')}
+                onClick={this._toggleHandler('six')}
                 alt="project card"
               />
             </ThumbnailContainer>
@@ -101,8 +101,8 @@ class Projects extends Component {
             </ButtonWrapper>
           </ContentWrapper>
         </ProjectContainer>
-        {/* Card modal*/}
-        <Modal isOpen={one} toggle={this._toggleHandler('one')}>
+{/* ------------------------------- one -------------------------------*/}
+<Modal isOpen={one} toggle={this._toggleHandler('one')}>
           <ModalBody>
             <a
               href="https://miranda-insta-clone.netlify.com"
@@ -137,8 +137,8 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-        {/* Card modal*/}
-        <Modal isOpen={two} toggle={this._toggleHandler('two')}>
+{/* ------------------------------- two -------------------------------*/}
+<Modal isOpen={two} toggle={this._toggleHandler('two')}>
           <ModalBody>
             <a
               href="https://miranda-usemytools.netlify.com"
@@ -184,11 +184,11 @@ class Projects extends Component {
 
 
 
-        {/* Card modal*/}
-        <Modal isOpen={three} toggle={this._toggleHandler('three')}>
+{/* ------------------------------- three -------------------------------*/}
+<Modal isOpen={three} toggle={this._toggleHandler('three')}>
           <ModalBody>
             <a
-              href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
+              href="https://miranda-restaurant.netlify.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -209,9 +209,9 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleProfJb}>
+          <ModalFooter toggle={this._toggleHandler('three')}>
             <Astyle
-              href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
+              href="https://miranda-restaurant.netlify.com"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
@@ -224,8 +224,12 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-        {/* Card modal*/}
-        <Modal isOpen={this.state.modalBCAD} toggle={this.toggleBCAD}>
+
+
+
+
+{/* ------------------------------- four -------------------------------*/}
+<Modal isOpen={four} toggle={this._toggleHandler('four')}>
           <ModalBody>
             <a
               href="https://redux-nasa-fwmiybrxm.now.sh/"
@@ -243,7 +247,7 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleBCAD}>
+          <ModalFooter toggle={this._toggleHandler('four')}>
             <Astyle href="https://redux-nasa-fwmiybrxm.now.sh/" target="_blank">
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
@@ -256,58 +260,21 @@ class Projects extends Component {
           </ModalFooter>
         </Modal>
 
-        {/* Card modal*/}
-        <Modal isOpen={this.state.modalTwo} toggle={this.toggleTwo}>
-          <ModalBody>
-            <a
-              href="https://mytools2019-nc83oebj7.now.sh/register"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FullSize src={img5} style={fullSize} alt="Use My Tool" />
-            </a>
-          </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
-            <ModalTextWrapper>
-              <ModalTitle>Next Project</ModalTitle>
-              <ModalSubTitle />
-              <ModalDescription>Next Project</ModalDescription>
-            </ModalTextWrapper>
-          </ModalHeader>
-          <ModalFooter toggle={this.toggleTwo}>
-            <Astyle
-              href="https://mytools2019-nc83oebj7.now.sh/register"
-              target="_blank"
-            >
-              <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
-            <Astyle
-              href="https://github.com/use-my-tools/Front-End"
-              target="_blank"
-            >
-              <i className="fab fa-github fa-2x" />
-            </Astyle>
-            <Astyle
-              href="https://www.youtube.com/watch?v=7SomB_hSfS0&feature=youtu.be"
-              target="_blank"
-            >
-              <i className="fab fa-youtube fa-2x" />
-            </Astyle>
-          </ModalFooter>
-        </Modal>
 
-        {/* Card modal Real Estate*/}
-        <Modal
-          isOpen={this.state.modalRealEstate}
-          toggle={this.toggleRealEstate}
+
+
+{/* ------------------------------- five -------------------------------*/}
+<Modal
+          isOpen={five}
+          toggle={this._toggleHandler('five')}
         >
           <ModalBody>
             <a
-              href="https://miranda-realestate.netlify.com/"
+              href="https://miranda-realestate.netlify.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={img6} style={fullSize} alt="miranda-realestate" />
+              <FullSize src={img5} style={fullSize} alt="miranda-realestate" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
@@ -321,9 +288,9 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleRealEstate}>
+          <ModalFooter toggle={this._toggleHandler('five')}>
             <Astyle
-              href="https://miranda-realestate.netlify.com/"
+              href="https://miranda-realestate.netlify.com"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
@@ -333,6 +300,48 @@ class Projects extends Component {
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
+            </Astyle>
+          </ModalFooter>
+        </Modal>
+
+
+
+{/* ------------------------------- six -------------------------------*/}
+           <Modal isOpen={six} toggle={this._toggleHandler('six')}>
+          <ModalBody>
+            <a
+              href="#"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FullSize src={img6} style={fullSize} alt="Use My Tool" />
+            </a>
+          </ModalBody>
+          <ModalHeader style={{ paddingTop: "0" }}>
+            <ModalTextWrapper>
+              <ModalTitle>Next Project</ModalTitle>
+              <ModalSubTitle />
+              <ModalDescription>Next Project</ModalDescription>
+            </ModalTextWrapper>
+          </ModalHeader>
+          <ModalFooter toggle={this._toggleHandler('six')}>
+            <Astyle
+              href="#"
+              target="_blank"
+            >
+              <i className="fas fa-globe fa-2x" />
+            </Astyle>{" "}
+            <Astyle
+              href="#"
+              target="_blank"
+            >
+              <i className="fab fa-github fa-2x" />
+            </Astyle>
+            <Astyle
+              href="#"
+              target="_blank"
+            >
+              <i className="fab fa-youtube fa-2x" />
             </Astyle>
           </ModalFooter>
         </Modal>
