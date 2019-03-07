@@ -21,7 +21,7 @@ import img1 from "../../assets/01.jpg";
 import img2 from "../../assets/02.jpg";
 import img3 from "../../assets/03.jpg";
 import img4 from "../../assets/04.jpg";
-import img7 from "../../assets/07.jpg";
+import img6 from "../../assets/07.jpg";
 import img5 from "../../assets/05.png";
 
 const thumbSize = { width: "370px", height: "217px" };
@@ -29,49 +29,22 @@ const fullSize = { width: "100%" };
 
 class Projects extends Component {
   state = {
-    modalAnchored: false,
-    modalCrytpoGym: false,
-    modalProfJb: false,
-    modalBCAD: false,
-    modalTwo: false,
-    modalRealEstate: false
+    one: false,
+    two: false,
+    three: false,
+    four: false,
+    five: false,
+    six: false
   };
 
-  toggleAnchored = () => {
-    this.setState({
-      modalAnchored: !this.state.modalAnchored
-    });
-  };
+  _toggleHandler = (card) =>  () => {
+   this.setState({[card]: !this.state[card]});
 
-  toggleCryptoGym = () => {
-    this.setState({
-      modalCrytpoGym: !this.state.modalCrytpoGym
-    });
-  };
-  toggleRealEstate = () => {
-    this.setState({
-      modalRealEstate: !this.state.modalRealEstate
-    });
-  };
-
-  toggleProfJb = () => {
-    this.setState({
-      modalProfJb: !this.state.modalProfJb
-    });
-  };
-
-  toggleBCAD = () => {
-    this.setState({
-      modalBCAD: !this.state.modalBCAD
-    });
-  };
-  toggleTwo = () => {
-    this.setState({
-      modalTwo: !this.state.modalTwo
-    });
-  };
+ }
 
   render() {
+  const {one,two,three,four,five,six} = this.state
+  console.log(this.state)
     return (
       <Element name="Projects">
         <ProjectContainer>
@@ -82,39 +55,39 @@ class Projects extends Component {
             </ProjectSubHeader>
             <ThumbnailContainer>
               <Thumbnail
-                src={img7}
+                src={img6}
                 style={thumbSize}
-                onClick={this.toggleRealEstate}
+                onClick={this._toggleHandler('six')}
                 alt="project card"
               />
               <Thumbnail
                 src={img3}
                 style={thumbSize}
-                onClick={this.toggleProfJb}
+                onClick={this._toggleHandler('three')}
                 alt="project card"
               />
               <Thumbnail
                 src={img1}
                 style={thumbSize}
-                onClick={this.toggleAnchored}
+                onClick={this._toggleHandler('one')}
                 alt="project card"
               />
               <Thumbnail
                 src={img2}
                 style={thumbSize}
-                onClick={this.toggleCryptoGym}
+                onClick={this._toggleHandler('two')}
                 alt="project card"
               />
               <Thumbnail
                 src={img4}
                 style={thumbSize}
-                onClick={this.toggleBCAD}
+                onClick={this._toggleHandler('four')}
                 alt="project card"
               />
               <Thumbnail
                 src={img5}
                 style={thumbSize}
-                onClick={this.toggleTwo}
+                onClick={this._toggleHandler('five')}
                 alt="project card"
               />
             </ThumbnailContainer>
@@ -129,10 +102,10 @@ class Projects extends Component {
           </ContentWrapper>
         </ProjectContainer>
         {/* Card modal*/}
-        <Modal isOpen={this.state.modalAnchored} toggle={this.toggleAnchored}>
+        <Modal isOpen={one} toggle={this._toggleHandler('one')}>
           <ModalBody>
             <a
-              href="https://miranda-insta-clone.netlify.com/"
+              href="https://miranda-insta-clone.netlify.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -149,9 +122,9 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleAnchored}>
+          <ModalFooter toggle={this._toggleHandler('one')}>
             <Astyle
-              href="https://miranda-insta-clone.netlify.com/"
+              href="https://miranda-insta-clone.netlify.com"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
@@ -165,10 +138,10 @@ class Projects extends Component {
           </ModalFooter>
         </Modal>
         {/* Card modal*/}
-        <Modal isOpen={this.state.modalCrytpoGym} toggle={this.toggleCryptoGym}>
+        <Modal isOpen={two} toggle={this._toggleHandler('two')}>
           <ModalBody>
             <a
-              href="https://mytools2019-nc83oebj7.now.sh/register"
+              href="https://miranda-usemytools.netlify.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -187,9 +160,9 @@ class Projects extends Component {
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this.toggleCryptoGym}>
+          <ModalFooter toggle={this._toggleHandler('two')}>
             <Astyle
-              href="https://mytools2019-nc83oebj7.now.sh/register"
+              href="https://miranda-usemytools.netlify.com"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
@@ -208,8 +181,11 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
+
+
+
         {/* Card modal*/}
-        <Modal isOpen={this.state.modalProfJb} toggle={this.toggleProfJb}>
+        <Modal isOpen={three} toggle={this._toggleHandler('three')}>
           <ModalBody>
             <a
               href="https://miranda-restaurant-3wd9nqkmp.now.sh/"
@@ -331,7 +307,7 @@ class Projects extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={img7} style={fullSize} alt="miranda-realestate" />
+              <FullSize src={img6} style={fullSize} alt="miranda-realestate" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
