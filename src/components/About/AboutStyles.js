@@ -101,7 +101,6 @@ export const BioWrapper = styled.div`
 export const ProfilePic = styled.img`
   width: 200px;
   border-radius: 50%;
-  border: 3px solid #444649;
   margin: 0 35px 20px 35px;
 `;
 

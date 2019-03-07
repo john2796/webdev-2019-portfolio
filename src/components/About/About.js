@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PDF from "../PDF/PDF";
 import Button from "../Button/Button";
 import { Element } from "react-scroll";
-
+import jbMiranda from '../../assets/jb.jpg'
 import {
   AboutContainer,
   ContentWrapper,
@@ -72,7 +72,7 @@ class About extends Component {
             </IconContainer>
 
             <BioWrapper>
-              <ProfilePic src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJxSValmtOKk8mJlY6NrJmmpUFj07emXVnYtnDL5bzkn48qRne" />
+              <ProfilePic src={jbMiranda} />
               <BioTextWrapper>
                 <BioText>
                   Hello. I'm John, a web developer in San Diego. I strive to

@@ -44,7 +44,6 @@ class Projects extends Component {
 
   render() {
   const {one,two,three,four,five,six} = this.state
-  console.log(this.state)
     return (
       <Element name="Projects">
         <ProjectContainer>
