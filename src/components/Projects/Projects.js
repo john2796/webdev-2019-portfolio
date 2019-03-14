@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 import React, { Component } from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import { Element } from "react-scroll";
@@ -37,13 +38,13 @@ class Projects extends Component {
     six: false
   };
 
-  _toggleHandler = (card) =>  () => {
-   this.setState({[card]: !this.state[card]});
+  _toggleHandler = (card) => () => {
+    this.setState({ [card]: !this.state[card] });
 
- }
+  }
 
   render() {
-  const {one,two,three,four,five,six} = this.state
+    const { one, two, three, four, five, six } = this.state
     return (
       <Element name="Projects">
         <ProjectContainer>
@@ -100,11 +101,11 @@ class Projects extends Component {
             </ButtonWrapper>
           </ContentWrapper>
         </ProjectContainer>
-{/* ------------------------------- one -------------------------------*/}
-<Modal isOpen={one} toggle={this._toggleHandler('one')}>
+        {/* ------------------------------- one -------------------------------*/}
+        <Modal isOpen={one} toggle={this._toggleHandler('one')}>
           <ModalBody>
             <a
-              href="https://miranda-insta-clone.netlify.com"
+              href="https://miranda-usemytools.netlify.com/register"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +124,7 @@ class Projects extends Component {
           </ModalHeader>
           <ModalFooter toggle={this._toggleHandler('one')}>
             <Astyle
-              href="https://miranda-insta-clone.netlify.com"
+              href="https://miranda-usemytools.netlify.com/register"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
@@ -136,8 +137,8 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-{/* ------------------------------- two -------------------------------*/}
-<Modal isOpen={two} toggle={this._toggleHandler('two')}>
+        {/* ------------------------------- two -------------------------------*/}
+        <Modal isOpen={two} toggle={this._toggleHandler('two')}>
           <ModalBody>
             <a
               href="https://miranda-usemytools.netlify.com"
@@ -183,8 +184,8 @@ class Projects extends Component {
 
 
 
-{/* ------------------------------- three -------------------------------*/}
-<Modal isOpen={three} toggle={this._toggleHandler('three')}>
+        {/* ------------------------------- three -------------------------------*/}
+        <Modal isOpen={three} toggle={this._toggleHandler('three')}>
           <ModalBody>
             <a
               href="https://miranda-restaurant.netlify.com"
@@ -227,8 +228,8 @@ class Projects extends Component {
 
 
 
-{/* ------------------------------- four -------------------------------*/}
-<Modal isOpen={four} toggle={this._toggleHandler('four')}>
+        {/* ------------------------------- four -------------------------------*/}
+        <Modal isOpen={four} toggle={this._toggleHandler('four')}>
           <ModalBody>
             <a
               href="https://redux-nasa-fwmiybrxm.now.sh/"
@@ -262,8 +263,8 @@ class Projects extends Component {
 
 
 
-{/* ------------------------------- five -------------------------------*/}
-<Modal
+        {/* ------------------------------- five -------------------------------*/}
+        <Modal
           isOpen={five}
           toggle={this._toggleHandler('five')}
         >
@@ -305,8 +306,8 @@ class Projects extends Component {
 
 
 
-{/* ------------------------------- six -------------------------------*/}
-           <Modal isOpen={six} toggle={this._toggleHandler('six')}>
+        {/* ------------------------------- six -------------------------------*/}
+        <Modal isOpen={six} toggle={this._toggleHandler('six')}>
           <ModalBody>
             <a
               href="#"
