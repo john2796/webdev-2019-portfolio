@@ -6,8 +6,8 @@ export const HomeContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  @import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400,700");
-  font-family: "Roboto Slab", serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+ font-family: 'Roboto Slab', serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -29,10 +29,11 @@ export const NameText = styled.div`
   font-size: 2.5rem;
   padding-bottom: 5px;
   font-weight: 500;
-  color: #fefffe;
+  color: #ffff;
   line-height: 1.2;
   span {
     color: #b3dec1;
+    
   }
   @media (max-width: 900px) {
     font-size: 2.2rem;

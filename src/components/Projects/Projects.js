@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-has-content */
 
 import React, { Component } from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
@@ -22,10 +23,10 @@ import img1 from "../../assets/01.jpg";
 import img2 from "../../assets/02.jpg";
 import img3 from "../../assets/03.jpg";
 import img4 from "../../assets/04.jpg";
-import img5 from "../../assets/07.jpg";
-import img6 from "../../assets/05.png";
+import img5 from "../../assets/05.jpg";
+import img6 from "../../assets/06.png";
 
-const thumbSize = { width: "370px", height: "217px" };
+const thumbSize = { width: "400px", height: "350px" };
 const fullSize = { width: "100%" };
 
 class Projects extends Component {
@@ -105,7 +106,7 @@ class Projects extends Component {
         <Modal isOpen={one} toggle={this._toggleHandler('one')}>
           <ModalBody>
             <a
-              href="https://miranda-usemytools.netlify.com/register"
+              href="https://miranda-insta-clone.netlify.com"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -124,7 +125,7 @@ class Projects extends Component {
           </ModalHeader>
           <ModalFooter toggle={this._toggleHandler('one')}>
             <Astyle
-              href="https://miranda-usemytools.netlify.com/register"
+              href="https://miranda-insta-clone.netlify.com"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
