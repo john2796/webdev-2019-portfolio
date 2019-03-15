@@ -1,4 +1,4 @@
-/* eslint-disable jsx-a11y/anchor-has-content */
+
 import React, { Component } from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import { Element } from "react-scroll";

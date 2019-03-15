@@ -45,7 +45,7 @@ export const ThumbnailContainer = styled.div`
 
 export const Thumbnail = styled.img`
   margin: 15px;
-  border: 5px solid gray;
+  /* border: 5px solid gray; */
   transition: transform 0.2s ease-out 0s;
 
   &:hover {
