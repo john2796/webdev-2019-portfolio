@@ -226,9 +226,6 @@ class Projects extends Component {
           </ModalFooter>
         </Modal>
 
-
-
-
         {/* ------------------------------- four -------------------------------*/}
         <Modal isOpen={four} toggle={this._toggleHandler('four')}>
           <ModalBody>
