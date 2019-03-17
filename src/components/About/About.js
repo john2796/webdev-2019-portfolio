@@ -36,6 +36,33 @@ class About extends Component {
               ABOUT
               <div className="header-bar" />
             </AboutHeader>
+
+
+
+            <BioWrapper>
+              <ProfilePic src={jbMiranda} />
+              <BioTextWrapper>
+                <BioText>
+                  Hello. I'm John, a web developer in San Diego. I strive to
+                  learn, improve, and challenge myself every day. What gets me
+                  up each morning is knowing the website I create today is
+                  better than the website I created yesterday. I want to work
+                  with inspiring people who feel the same way I do.
+                </BioText>
+                <Button
+                  name="View Resume"
+                  color="#131928"
+                  border="2px solid #444649"
+                  hoverFontColor="#FEFFFE"
+                  bgColor="#131928"
+                  borderColor="#444649"
+                  width="180px"
+                  fontSize="1.2rem"
+                  onClick={this.togglePDF}
+                />
+              </BioTextWrapper>
+            </BioWrapper>
+
             <IconContainer>
               <IconTextWrapper>
                 <Hexagon>
@@ -70,30 +97,6 @@ class About extends Component {
                 <IconText>Unlimited user base growth potential</IconText>
               </IconTextWrapper>
             </IconContainer>
-
-            <BioWrapper>
-              <ProfilePic src={jbMiranda} />
-              <BioTextWrapper>
-                <BioText>
-                  Hello. I'm John, a web developer in San Diego. I strive to
-                  learn, improve, and challenge myself every day. What gets me
-                  up each morning is knowing the website I create today is
-                  better than the website I created yesterday. I want to work
-                  with inspiring people who feel the same way I do.
-                </BioText>
-                <Button
-                  name="View Resume"
-                  color="#131928"
-                  border="2px solid #444649"
-                  hoverFontColor="#FEFFFE"
-                  bgColor="#131928"
-                  borderColor="#444649"
-                  width="180px"
-                  fontSize="1.2rem"
-                  onClick={this.togglePDF}
-                />
-              </BioTextWrapper>
-            </BioWrapper>
           </ContentWrapper>
           <PDF toggle={this.togglePDF} isOpen={this.state.modal} />
         </AboutContainer>

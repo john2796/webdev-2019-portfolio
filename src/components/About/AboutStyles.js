@@ -39,7 +39,7 @@ export const IconContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin-bottom: 100px;
+  
   @media (max-width: 600px) {
     margin-top: 35px;
   }
@@ -92,6 +92,8 @@ export const Icon = styled.i`
 export const BioWrapper = styled.div`
   display: flex;
   align-items: center;
+
+  margin:10% auto;
 
   @media (max-width: 800px) {
     flex-direction: column;
