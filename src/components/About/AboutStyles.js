@@ -120,14 +120,15 @@ export const BioTextWrapper = styled.div`
 
 export const BioText = styled.div`
   text-align: left;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 5px;
+  line-height:1.2;
   padding: 0 15px;
   color: #444649;
 
   @media (max-width: 800px) {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     text-align: center;
   }
   @media (max-width: 600px) {
