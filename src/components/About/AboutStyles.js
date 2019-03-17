@@ -92,12 +92,12 @@ export const Icon = styled.i`
 export const BioWrapper = styled.div`
   display: flex;
   align-items: center;
-
-  margin:10% auto;
-
+  margin-bottom:10%;
   @media (max-width: 800px) {
     flex-direction: column;
+    margin-top:4%;
   }
+
 `;
 
 export const ProfilePic = styled.img`

@@ -37,8 +37,6 @@ class About extends Component {
               <div className="header-bar" />
             </AboutHeader>
 
-
-
             <BioWrapper>
               <ProfilePic src={jbMiranda} />
               <BioTextWrapper>
@@ -62,6 +60,7 @@ class About extends Component {
                 />
               </BioTextWrapper>
             </BioWrapper>
+
 
             <IconContainer>
               <IconTextWrapper>
