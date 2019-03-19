@@ -1,7 +1,7 @@
 import React from "react";
 import { PDFObject } from "react-pdfobject";
 import { Modal } from "reactstrap";
-import jbresume from '../../assets/jbMiranda.pdf'
+import jbresume from './../../assets/jbmiranda.pdf'
 // add pdf later
 class PDFModal extends React.Component {
   render() {
