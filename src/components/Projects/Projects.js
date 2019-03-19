@@ -313,7 +313,7 @@ class Projects extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={img7} style={fullSize} alt="Use My Tool" />
+              <FullSize src={img7} style={fullSize} alt="movieDB19" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
