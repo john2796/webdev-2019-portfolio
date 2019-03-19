@@ -24,7 +24,6 @@ import img2 from "../../assets/02.jpg";
 import img3 from "../../assets/03.jpg";
 import img4 from "../../assets/04.jpg";
 import img5 from "../../assets/05.jpg";
-import img6 from "../../assets/06.png"; // placeholder
 import img7 from "../../assets/07.png";
 
 const thumbSize = { width: "400px", height: "350px" };
@@ -310,7 +309,7 @@ class Projects extends Component {
         <Modal isOpen={seven} toggle={this._toggleHandler('seven')}>
           <ModalBody>
             <a
-              href="/#"
+              href="https://moviedb19.netlify.com/"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -322,29 +321,37 @@ class Projects extends Component {
               <ModalTitle>MovieDb19</ModalTitle>
               <ModalSubTitle />
               <ModalDescription>
-
+                <ul>
+                  <li>
+                    Built with : <br />
+                    - themoviedb api , react.js, redux, wow.js.
+                </li>
+                  <li>
+                    description: <br />
+                    - the best movie app references for movies, actors, directors, and TV series . included are photos, biographies, trailers, descriptions, reviews, movie showtimes, TV listings, and more.
+                  </li>
+                  <li>
+                    Awesome company: <br />
+                    - this project is still under development 👾
+                  </li>
+                </ul>
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
           <ModalFooter toggle={this._toggleHandler('seven')}>
             <Astyle
-              href="#"
+              href="https://moviedb19.netlify.com/"
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
             </Astyle>{" "}
             <Astyle
-              href="#"
+              href="https://github.com/john2796/moviedb19"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-            <Astyle
-              href="#"
-              target="_blank"
-            >
-              <i className="fab fa-youtube fa-2x" />
-            </Astyle>
+
           </ModalFooter>
         </Modal>
       </Element>
