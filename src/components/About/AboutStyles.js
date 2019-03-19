@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 export const AboutContainer = styled.div`
   background: #fffdff;
   font-family: "Arvo", serif;
