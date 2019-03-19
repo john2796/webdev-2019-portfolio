@@ -24,7 +24,8 @@ import img2 from "../../assets/02.jpg";
 import img3 from "../../assets/03.jpg";
 import img4 from "../../assets/04.jpg";
 import img5 from "../../assets/05.jpg";
-import img6 from "../../assets/06.png";
+import img6 from "../../assets/06.png"; // placeholder
+import img7 from "../../assets/07.png";
 
 const thumbSize = { width: "400px", height: "350px" };
 const fullSize = { width: "100%" };
@@ -36,7 +37,7 @@ class Projects extends Component {
     three: false,
     four: false,
     five: false,
-    six: false
+    seven: false
   };
 
   _toggleHandler = (card) => () => {
@@ -45,7 +46,7 @@ class Projects extends Component {
   }
 
   render() {
-    const { one, two, three, four, five, six } = this.state
+    const { one, two, three, four, five, seven } = this.state
     return (
       <Element name="Projects">
         <ProjectContainer>
@@ -55,6 +56,12 @@ class Projects extends Component {
               <div className="header-bar" />
             </ProjectSubHeader>
             <ThumbnailContainer>
+              <Thumbnail
+                src={img7}
+                style={thumbSize}
+                onClick={this._toggleHandler('seven')}
+                alt="project card"
+              />
               <Thumbnail
                 src={img5}
                 style={thumbSize}
@@ -85,12 +92,7 @@ class Projects extends Component {
                 onClick={this._toggleHandler('four')}
                 alt="project card"
               />
-              <Thumbnail
-                src={img6}
-                style={thumbSize}
-                onClick={this._toggleHandler('six')}
-                alt="project card"
-              />
+
             </ThumbnailContainer>
             <ButtonWrapper>
               <a
@@ -304,25 +306,27 @@ class Projects extends Component {
 
 
 
-        {/* ------------------------------- six -------------------------------*/}
-        <Modal isOpen={six} toggle={this._toggleHandler('six')}>
+        {/* ------------------------------- seven -------------------------------*/}
+        <Modal isOpen={seven} toggle={this._toggleHandler('seven')}>
           <ModalBody>
             <a
-              href="#"
+              href="/#"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FullSize src={img6} style={fullSize} alt="Use My Tool" />
+              <FullSize src={img7} style={fullSize} alt="Use My Tool" />
             </a>
           </ModalBody>
           <ModalHeader style={{ paddingTop: "0" }}>
             <ModalTextWrapper>
-              <ModalTitle>Next Project</ModalTitle>
+              <ModalTitle>MovieDb19</ModalTitle>
               <ModalSubTitle />
-              <ModalDescription>Next Project</ModalDescription>
+              <ModalDescription>
+
+              </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
-          <ModalFooter toggle={this._toggleHandler('six')}>
+          <ModalFooter toggle={this._toggleHandler('seven')}>
             <Astyle
               href="#"
               target="_blank"
