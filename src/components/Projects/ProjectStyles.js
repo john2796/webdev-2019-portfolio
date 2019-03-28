@@ -54,9 +54,7 @@ export const Thumbnail = styled.img`
   }
 `;
 
-export const FullSize = styled.img`
-  /* border: 5px solid black; */
-`;
+export const FullSize = styled.img``;
 
 export const Astyle = styled.a`
   color: #444649;
@@ -105,9 +103,9 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const ProjectSection = styled.section`
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
   display: flex;
   border: 1px solid red;
-  max-width: 1100px;
   justify-content: center;
 
   img {
@@ -123,16 +121,37 @@ export const ProjectSection = styled.section`
   }
 
   .left-child {
-    border: 1px solid red;
+  }
+
+  .project-content {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .project-content span {
+    font-size: 48px;
+    font-family: 'Open Sans';
+    color: rgb(23, 123, 248);
+    font-weight: 600;
+  }
+  .project-content p {
+    font-family: 'Open Sans';
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+    font-weight: 600;
   }
   .middle-child {
-    border: 1px solid red;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 20px;
+    .design-circle {
+      width: 50px;
+      margin-top: 150px;
+    }
     @media (max-width: 600px) {
       display: none;
     }
   }
   .right-child {
-    border: 1px solid red;
   }
 `;

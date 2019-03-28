@@ -2,18 +2,18 @@ import React from 'react';
 import { CustomButton } from './ButtonStyles';
 
 const NavButton = props => {
-  let btnName = props.name;
-  let color = props.color;
-  let bgColor = props.bgColor;
-  let border = props.border;
-  let hoverFontColor = props.hoverFontColor;
-  let borderColor = props.borderColor;
-  let onClick = props.onClick;
-  let fontSize = props.fontSize;
-  let width = props.width;
-  let mobileFontSize = props.mobileFontSize;
-  let mobileWidth = props.mobileWidth;
-  let mobileHeight = props.mobileHeight;
+  const btnName = props.name;
+  const color = props.color;
+  const bgColor = props.bgColor;
+  const border = props.border;
+  const hoverFontColor = props.hoverFontColor;
+  const borderColor = props.borderColor;
+  const onClick = props.onClick;
+  const fontSize = props.fontSize;
+  const width = props.width;
+  const mobileFontSize = props.mobileFontSize;
+  const mobileWidth = props.mobileWidth;
+  const mobileHeight = props.mobileHeight;
 
   return (
     <CustomButton

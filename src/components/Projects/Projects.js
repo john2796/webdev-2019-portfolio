@@ -60,18 +60,40 @@ class Projects extends Component {
             <ThumbnailContainer>
               <ProjectSection>
                 <div className="left-child">
+                  <div className="project-content">
+                    <span>01</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro neque corrupti sapiente. rerum.
+                    </p>
+                  </div>
+
                   <Thumbnail
                     src={img7}
                     style={thumbSize}
                     onClick={this._toggleHandler('seven')}
                     alt="project card"
                   />
+                  <div className="project-content">
+                    <span>03</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro neque corrupti sapiente. rerum.
+                    </p>
+                  </div>
                   <Thumbnail
                     src={img5}
                     style={thumbSize}
                     onClick={this._toggleHandler('five')}
                     alt="project card"
                   />
+                  <div className="project-content">
+                    <span>05</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro neque corrupti sapiente. rerum.
+                    </p>
+                  </div>
                   <Thumbnail
                     src={img3}
                     style={thumbSize}
@@ -84,6 +106,7 @@ class Projects extends Component {
                   <img
                     src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
                     alt="design-circle"
+                    className="design-circle"
                   />
                   <img
                     src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/68504a9d-line.png"
@@ -98,12 +121,26 @@ class Projects extends Component {
                     onClick={this._toggleHandler('one')}
                     alt="project card"
                   />
+                  <div className="project-content">
+                    <span>02</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro neque corrupti sapiente. rerum.
+                    </p>
+                  </div>
                   <Thumbnail
                     src={img2}
                     style={thumbSize}
                     onClick={this._toggleHandler('two')}
                     alt="project card"
                   />
+                  <div className="project-content">
+                    <span>04</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro neque corrupti sapiente. rerum.
+                    </p>
+                  </div>
                   <Thumbnail
                     src={img4}
                     style={thumbSize}
