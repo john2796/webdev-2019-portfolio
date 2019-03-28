@@ -79,6 +79,7 @@ class Projects extends Component {
                     alt="project card"
                   />
                 </div>
+
                 <div className="middle-child">
                   <img
                     src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
@@ -89,6 +90,7 @@ class Projects extends Component {
                     alt="line-dots"
                   />
                 </div>
+
                 <div className="right-child">
                   <Thumbnail
                     src={img1}

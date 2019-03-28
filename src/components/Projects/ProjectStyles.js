@@ -104,4 +104,35 @@ export const ButtonWrapper = styled.div`
   margin: 20px 0;
 `;
 
-export const ProjectSection = styled.section``;
+export const ProjectSection = styled.section`
+  display: flex;
+  border: 1px solid red;
+  max-width: 1100px;
+  justify-content: center;
+
+  img {
+    max-width: 100%;
+  }
+
+  @media (max-width: 900px) {
+    max-width: 800px;
+  }
+  @media (max-width: 600px) {
+    background: red;
+    flex-direction: column;
+  }
+
+  .left-child {
+    border: 1px solid red;
+  }
+  .middle-child {
+    border: 1px solid red;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+  .right-child {
+    border: 1px solid red;
+  }
+`;
