@@ -18,6 +18,7 @@ import {
   ModalDescription,
   ButtonWrapper,
   ModalFooter,
+  ProjectSection,
 } from './ProjectStyles';
 import img1 from '../../assets/01.jpg';
 import img2 from '../../assets/02.jpg';
@@ -40,7 +41,9 @@ class Projects extends Component {
   };
 
   _toggleHandler = card => () => {
-    this.setState({ [card]: !this.state[card] });
+    this.setState(prevState => ({
+      [card]: !prevState[card],
+    }));
   };
 
   render() {
@@ -53,44 +56,62 @@ class Projects extends Component {
               PROJECTS
               <div className="header-bar" />
             </ProjectSubHeader>
+
             <ThumbnailContainer>
-              <Thumbnail
-                src={img7}
-                style={thumbSize}
-                onClick={this._toggleHandler('seven')}
-                alt="project card"
-              />
-              <Thumbnail
-                src={img5}
-                style={thumbSize}
-                onClick={this._toggleHandler('five')}
-                alt="project card"
-              />
-              <Thumbnail
-                src={img3}
-                style={thumbSize}
-                onClick={this._toggleHandler('three')}
-                alt="project card"
-              />
-              <Thumbnail
-                src={img1}
-                style={thumbSize}
-                onClick={this._toggleHandler('one')}
-                alt="project card"
-              />
-              <Thumbnail
-                src={img2}
-                style={thumbSize}
-                onClick={this._toggleHandler('two')}
-                alt="project card"
-              />
-              <Thumbnail
-                src={img4}
-                style={thumbSize}
-                onClick={this._toggleHandler('four')}
-                alt="project card"
-              />
+              <ProjectSection>
+                <div className="left-child">
+                  <Thumbnail
+                    src={img7}
+                    style={thumbSize}
+                    onClick={this._toggleHandler('seven')}
+                    alt="project card"
+                  />
+                  <Thumbnail
+                    src={img5}
+                    style={thumbSize}
+                    onClick={this._toggleHandler('five')}
+                    alt="project card"
+                  />
+                  <Thumbnail
+                    src={img3}
+                    style={thumbSize}
+                    onClick={this._toggleHandler('three')}
+                    alt="project card"
+                  />
+                </div>
+                <div className="middle-child">
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
+                    alt="design-circle"
+                  />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/68504a9d-line.png"
+                    alt="line-dots"
+                  />
+                </div>
+                <div className="right-child">
+                  <Thumbnail
+                    src={img1}
+                    style={thumbSize}
+                    onClick={this._toggleHandler('one')}
+                    alt="project card"
+                  />
+                  <Thumbnail
+                    src={img2}
+                    style={thumbSize}
+                    onClick={this._toggleHandler('two')}
+                    alt="project card"
+                  />
+                  <Thumbnail
+                    src={img4}
+                    style={thumbSize}
+                    onClick={this._toggleHandler('four')}
+                    alt="project card"
+                  />
+                </div>
+              </ProjectSection>
             </ThumbnailContainer>
+
             <ButtonWrapper>
               <a
                 href="https://www.johnbenedictmiranda.com/"

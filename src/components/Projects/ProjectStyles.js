@@ -1,10 +1,10 @@
-import styled from "styled-components";
-import { ModalHeader } from "reactstrap";
+import styled from 'styled-components';
+import { ModalHeader } from 'reactstrap';
 
 export const ProjectContainer = styled.div`
   background: #ffff;
   padding: 100px 0;
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
 
   img {
     object-fit: cover;
@@ -73,14 +73,14 @@ export const ModalTextWrapper = styled.div`
 `;
 
 export const ModalTitle = styled.h2`
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   font-size: 1.6rem;
   font-weight: 600;
   color: #444649;
 `;
 
 export const ModalSubTitle = styled.h4`
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   font-size: 1.1rem;
   font-weight: bold;
   opacity: 0.7;
@@ -88,7 +88,7 @@ export const ModalSubTitle = styled.h4`
 `;
 
 export const ModalDescription = styled.p`
-  font-family: "Arvo", serif;
+  font-family: 'Arvo', serif;
   color: #444649;
   font-size: 1.1rem;
 `;
@@ -103,3 +103,5 @@ export const ButtonWrapper = styled.div`
   justify-content: center;
   margin: 20px 0;
 `;
+
+export const ProjectSection = styled.section``;
