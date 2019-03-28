@@ -17,6 +17,8 @@ export const ContactHeader = styled.div`
   text-transform: uppercase;
   text-align: center;
   font-size: 1.8rem;
+  font-weight: 700;
+
   @media (max-width: 900px) {
     font-size: 1.6rem;
   }

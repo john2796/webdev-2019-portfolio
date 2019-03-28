@@ -3,7 +3,6 @@ import { ModalHeader } from 'reactstrap';
 
 export const ProjectContainer = styled.div`
   background: #ffff;
-  padding: 100px 0;
   font-family: 'Open Sans';
 
   img {
@@ -106,26 +105,37 @@ export const ButtonWrapper = styled.div`
 export const ProjectSection = styled.section`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
 
   img {
     max-width: 100%;
   }
 
   @media (max-width: 900px) {
-    max-width: 800px;
-  }
-  @media (max-width: 600px) {
-    background: red;
     flex-direction: column;
+    align-items: center;
+    border: 1px solid red;
+
+    .first-project {
+      margin: 0;
+    }
   }
 
+  /* --------------------------- Left Child --------------------------- */
   .left-child {
+    .first-project {
+      margin-top: 100px;
+    }
   }
-
+  /* --------------------------- Prjoject message content --------------------------- */
   .project-content {
     width: 70%;
     margin: 0 auto;
+    margin-bottom: 52px;
+    @media (max-width: 900px) {
+      width: 90%;
+      margin-bottom: 0;
+    }
   }
   .project-content span {
     font-size: 48px;
@@ -139,19 +149,43 @@ export const ProjectSection = styled.section`
     color: rgb(51, 51, 51);
     font-weight: 600;
   }
+  /* --------------------------- Middle Child --------------------------- */
   .middle-child {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 20px;
     .design-circle {
-      width: 50px;
+      min-width: 30px;
       margin-top: 100px;
     }
-    @media (max-width: 600px) {
+    .second-line {
+      height: 5px;
+    }
+    .design-circle-last {
+      margin-top: -3px;
+    }
+    .one {
+      position: relative;
+      bottom: 1257px;
+    }
+    .two {
+      position: relative;
+      bottom: 1000px;
+    }
+    .three {
+      position: relative;
+      bottom: 701px;
+    }
+    .four {
+      position: relative;
+      bottom: 463px;
+    }
+    @media (max-width: 900px) {
       display: none;
     }
   }
+  /* --------------------------- Right Child --------------------------- */
+
   .right-child {
   }
 `;

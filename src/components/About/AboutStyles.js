@@ -128,7 +128,7 @@ export const BioText = styled.div`
   margin-bottom: 5px;
   line-height: 1.35;
   padding: 0 15px;
-  color: #444649;
+  color: rgb(51, 51, 51);
 
   @media (max-width: 800px) {
     font-size: 1.3rem;

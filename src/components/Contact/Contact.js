@@ -55,7 +55,7 @@ class Contact extends Component {
     this.setState({ [e.target.name]: e.target.value, errors: {} });
 
   render() {
-    const { name, email, message, errors } = this.state;
+    const { name, email, message, errors, loading } = this.state;
 
     return (
       <Element name="Contact">
@@ -77,7 +77,7 @@ class Contact extends Component {
               Contact
               <div className="header-bar" />
             </ContactHeader>
-            {this.state.loading && (
+            {loading && (
               <Spinner
                 md="auto"
                 style={{ margin: '0 auto', display: 'block' }}

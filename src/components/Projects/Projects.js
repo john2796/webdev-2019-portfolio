@@ -60,7 +60,7 @@ class Projects extends Component {
             <ThumbnailContainer>
               <ProjectSection>
                 <div className="left-child">
-                  <div className="project-content">
+                  <div className="project-content first-project">
                     <span>01</span>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -74,7 +74,7 @@ class Projects extends Component {
                     onClick={this._toggleHandler('seven')}
                     alt="project card"
                   />
-                  <div className="project-content">
+                  <div className="project-content third-project">
                     <span>03</span>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -87,7 +87,7 @@ class Projects extends Component {
                     onClick={this._toggleHandler('five')}
                     alt="project card"
                   />
-                  <div className="project-content">
+                  <div className="project-content fifth-project">
                     <span>05</span>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -115,6 +115,32 @@ class Projects extends Component {
                   <img
                     src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/68504a9d-line.png"
                     alt="line-dots"
+                    className="second-line"
+                  />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
+                    alt="design-circle"
+                    className="design-circle-last"
+                  />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
+                    alt="design-circle"
+                    className="one"
+                  />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
+                    alt="design-circle"
+                    className="two"
+                  />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
+                    alt="design-circle"
+                    className="three"
+                  />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/e59b8b49-round.png"
+                    alt="design-circle"
+                    className="four"
                   />
                 </div>
 
@@ -125,7 +151,7 @@ class Projects extends Component {
                     onClick={this._toggleHandler('one')}
                     alt="project card"
                   />
-                  <div className="project-content">
+                  <div className="project-content second-project">
                     <span>02</span>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -138,7 +164,7 @@ class Projects extends Component {
                     onClick={this._toggleHandler('two')}
                     alt="project card"
                   />
-                  <div className="project-content">
+                  <div className="project-content fourth-project">
                     <span>04</span>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
@@ -151,7 +177,7 @@ class Projects extends Component {
                     onClick={this._toggleHandler('four')}
                     alt="project card"
                   />
-                  <div className="project-content">
+                  <div className="project-content sixth-project">
                     <span>06</span>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit.
