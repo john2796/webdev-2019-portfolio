@@ -1,8 +1,8 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 
-import React, { Component } from "react";
-import { Modal, ModalHeader, ModalBody } from "reactstrap";
-import { Element } from "react-scroll";
+import React, { Component } from 'react';
+import { Modal, ModalHeader, ModalBody } from 'reactstrap';
+import { Element } from 'react-scroll';
 
 import {
   ProjectContainer,
@@ -17,17 +17,17 @@ import {
   ModalSubTitle,
   ModalDescription,
   ButtonWrapper,
-  ModalFooter
-} from "./ProjectStyles";
-import img1 from "../../assets/01.jpg";
-import img2 from "../../assets/02.jpg";
-import img3 from "../../assets/03.jpg";
-import img4 from "../../assets/04.jpg";
-import img5 from "../../assets/05.jpg";
-import img7 from "../../assets/07.png";
+  ModalFooter,
+} from './ProjectStyles';
+import img1 from '../../assets/01.jpg';
+import img2 from '../../assets/02.jpg';
+import img3 from '../../assets/03.jpg';
+import img4 from '../../assets/04.jpg';
+import img5 from '../../assets/05.jpg';
+import img7 from '../../assets/07.png';
 
-const thumbSize = { width: "400px", height: "350px" };
-const fullSize = { width: "100%" };
+const thumbSize = { width: '400px', height: '350px' };
+const fullSize = { width: '100%' };
 
 class Projects extends Component {
   state = {
@@ -36,16 +36,15 @@ class Projects extends Component {
     three: false,
     four: false,
     five: false,
-    seven: false
+    seven: false,
   };
 
-  _toggleHandler = (card) => () => {
+  _toggleHandler = card => () => {
     this.setState({ [card]: !this.state[card] });
-
-  }
+  };
 
   render() {
-    const { one, two, three, four, five, seven } = this.state
+    const { one, two, three, four, five, seven } = this.state;
     return (
       <Element name="Projects">
         <ProjectContainer>
@@ -91,14 +90,13 @@ class Projects extends Component {
                 onClick={this._toggleHandler('four')}
                 alt="project card"
               />
-
             </ThumbnailContainer>
             <ButtonWrapper>
               <a
                 href="https://www.johnbenedictmiranda.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ textDecoration: "none" }}
+                style={{ textDecoration: 'none' }}
               />
             </ButtonWrapper>
           </ContentWrapper>
@@ -114,7 +112,7 @@ class Projects extends Component {
               <FullSize src={img1} style={fullSize} alt="A Instagram clone" />
             </a>
           </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
+          <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>Instagram</ModalTitle>
               <ModalSubTitle>A Instagram clone</ModalSubTitle>
@@ -130,7 +128,7 @@ class Projects extends Component {
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
+            </Astyle>{' '}
             <Astyle
               href="https://github.com/john2796/React-Insta-Clone-1"
               target="_blank"
@@ -150,7 +148,7 @@ class Projects extends Component {
               <FullSize src={img2} style={fullSize} alt="Use My Tool" />
             </a>
           </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
+          <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>Use My Tool</ModalTitle>
               <ModalSubTitle />
@@ -168,7 +166,7 @@ class Projects extends Component {
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
+            </Astyle>{' '}
             <Astyle
               href="https://github.com/use-my-tools/Front-End"
               target="_blank"
@@ -183,8 +181,6 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-
-
 
         {/* ------------------------------- three -------------------------------*/}
         <Modal isOpen={three} toggle={this._toggleHandler('three')}>
@@ -201,7 +197,7 @@ class Projects extends Component {
               />
             </a>
           </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
+          <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>The Soul Food & Bistro</ModalTitle>
               <ModalSubTitle>A modern website for a Restaurant</ModalSubTitle>
@@ -217,7 +213,7 @@ class Projects extends Component {
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
+            </Astyle>
             <Astyle
               href="https://github.com/john2796/portfolio-restaurant-01"
               target="_blank"
@@ -238,7 +234,7 @@ class Projects extends Component {
               <FullSize src={img4} style={fullSize} alt="NASA" />
             </a>
           </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
+          <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>NASA</ModalTitle>
               <ModalDescription>
@@ -249,7 +245,7 @@ class Projects extends Component {
           <ModalFooter toggle={this._toggleHandler('four')}>
             <Astyle href="https://redux-nasa-fwmiybrxm.now.sh/" target="_blank">
               <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
+            </Astyle>{' '}
             <Astyle
               href="https://github.com/john2796/redux-nasa-api"
               target="_blank"
@@ -259,14 +255,8 @@ class Projects extends Component {
           </ModalFooter>
         </Modal>
 
-
-
-
         {/* ------------------------------- five -------------------------------*/}
-        <Modal
-          isOpen={five}
-          toggle={this._toggleHandler('five')}
-        >
+        <Modal isOpen={five} toggle={this._toggleHandler('five')}>
           <ModalBody>
             <a
               href="https://miranda-realestate.netlify.com"
@@ -276,7 +266,7 @@ class Projects extends Component {
               <FullSize src={img5} style={fullSize} alt="miranda-realestate" />
             </a>
           </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
+          <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>Los Angeles Experts</ModalTitle>
               <ModalSubTitle />
@@ -293,7 +283,7 @@ class Projects extends Component {
               target="_blank"
             >
               <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
+            </Astyle>{' '}
             <Astyle
               href="https://github.com/john2796/portfolio-003-real-estate"
               target="_blank"
@@ -302,8 +292,6 @@ class Projects extends Component {
             </Astyle>
           </ModalFooter>
         </Modal>
-
-
 
         {/* ------------------------------- seven -------------------------------*/}
         <Modal isOpen={seven} toggle={this._toggleHandler('seven')}>
@@ -316,42 +304,40 @@ class Projects extends Component {
               <FullSize src={img7} style={fullSize} alt="movieDB19" />
             </a>
           </ModalBody>
-          <ModalHeader style={{ paddingTop: "0" }}>
+          <ModalHeader style={{ paddingTop: '0' }}>
             <ModalTextWrapper>
               <ModalTitle>MovieDb19</ModalTitle>
               <ModalSubTitle />
               <ModalDescription>
                 <ul>
                   <li>
-                    Built with : <br />
-                    - themoviedb api , react.js, redux, wow.js.
-                </li>
-                  <li>
-                    description: <br />
-                    - the best movie app references for movies, actors, directors, and TV series . included are photos, biographies, trailers, descriptions, reviews, movie showtimes, TV listings, and more.
+                    Built with : <br />- themoviedb api , react.js, redux,
+                    wow.js.
                   </li>
                   <li>
-                    Awesome company: <br />
-                    - this project is still under development 👾
+                    description: <br />- the best movie app references for
+                    movies, actors, directors, and TV series . included are
+                    photos, biographies, trailers, descriptions, reviews, movie
+                    showtimes, TV listings, and more.
+                  </li>
+                  <li>
+                    Awesome company: <br />- this project is still under
+                    development 👾
                   </li>
                 </ul>
               </ModalDescription>
             </ModalTextWrapper>
           </ModalHeader>
           <ModalFooter toggle={this._toggleHandler('seven')}>
-            <Astyle
-              href="https://moviedb19.netlify.com/"
-              target="_blank"
-            >
+            <Astyle href="https://moviedb19.netlify.com/" target="_blank">
               <i className="fas fa-globe fa-2x" />
-            </Astyle>{" "}
+            </Astyle>{' '}
             <Astyle
               href="https://github.com/john2796/moviedb19"
               target="_blank"
             >
               <i className="fab fa-github fa-2x" />
             </Astyle>
-
           </ModalFooter>
         </Modal>
       </Element>
