@@ -1,12 +1,12 @@
-import styled from "styled-components";
-import { DropdownMenu } from "reactstrap";
+import styled from 'styled-components';
+import { DropdownMenu } from 'reactstrap';
 
 export const NavBarContainer = styled.div`
   height: 50px;
   width: 100%;
   background: #182327;
   border-bottom: 3px solid #b3dec1;
-  font-family: "Arvo", serif;
+  font-family: 'Open Sans';
 `;
 
 export const NavLinkWrapper = styled.div`

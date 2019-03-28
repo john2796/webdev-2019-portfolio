@@ -4,7 +4,7 @@ import { ModalHeader } from 'reactstrap';
 export const ProjectContainer = styled.div`
   background: #ffff;
   padding: 100px 0;
-  font-family: 'Arvo', serif;
+  font-family: 'Open Sans';
 
   img {
     object-fit: cover;
@@ -22,6 +22,7 @@ export const ProjectSubHeader = styled.div`
   margin-bottom: 100px auto;
   text-align: center;
   font-size: 1.8rem;
+  font-weight: 700;
   @media (max-width: 900px) {
     font-size: 1.6rem;
   }
@@ -29,10 +30,10 @@ export const ProjectSubHeader = styled.div`
     font-size: 1.4rem;
   }
   .header-bar {
-    width: 70px;
+    width: 64px;
     height: 4px;
     background: #444649;
-    margin: 0 auto;
+    margin: 7px auto;
   }
 `;
 
@@ -71,14 +72,14 @@ export const ModalTextWrapper = styled.div`
 `;
 
 export const ModalTitle = styled.h2`
-  font-family: 'Arvo', serif;
+  font-family: 'Open Sans';
   font-size: 1.6rem;
   font-weight: 600;
   color: #444649;
 `;
 
 export const ModalSubTitle = styled.h4`
-  font-family: 'Arvo', serif;
+  font-family: 'Open Sans';
   font-size: 1.1rem;
   font-weight: bold;
   opacity: 0.7;
@@ -86,7 +87,7 @@ export const ModalSubTitle = styled.h4`
 `;
 
 export const ModalDescription = styled.p`
-  font-family: 'Arvo', serif;
+  font-family: 'Open Sans';
   color: #444649;
   font-size: 1.1rem;
 `;
@@ -105,8 +106,7 @@ export const ButtonWrapper = styled.div`
 export const ProjectSection = styled.section`
   @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
   display: flex;
-  border: 1px solid red;
-  justify-content: center;
+  justify-content: flex-start;
 
   img {
     max-width: 100%;
@@ -146,7 +146,7 @@ export const ProjectSection = styled.section`
     padding: 0 20px;
     .design-circle {
       width: 50px;
-      margin-top: 150px;
+      margin-top: 100px;
     }
     @media (max-width: 600px) {
       display: none;

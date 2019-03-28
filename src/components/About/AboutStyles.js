@@ -1,7 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+
 export const AboutContainer = styled.div`
   background: #fffdff;
-  font-family: "Arvo", serif;
+  font-family: 'Open Sans';
   padding: 100px 0;
 `;
 
@@ -18,6 +19,8 @@ export const AboutHeader = styled.div`
   color: #131928;
   margin-bottom: 70px;
   font-size: 1.8rem;
+  font-weight: 700;
+
   @media (max-width: 900px) {
     font-size: 1.6rem;
     margin-bottom: 50px;
@@ -27,10 +30,10 @@ export const AboutHeader = styled.div`
     margin-bottom: 0px;
   }
   .header-bar {
-    width: 70px;
+    width: 64px;
     height: 4px;
     background: #444649;
-    margin: 0 auto;
+    margin: 7px auto;
   }
 `;
 
@@ -38,7 +41,7 @@ export const IconContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  
+
   @media (max-width: 600px) {
     margin-top: 35px;
   }
@@ -74,7 +77,7 @@ export const IconText = styled.div`
   text-align: center;
   color: #616161;
   padding-top: 5px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
   @media (max-width: 600px) {
     font-size: 1rem;
@@ -91,12 +94,11 @@ export const Icon = styled.i`
 export const BioWrapper = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom:10%;
+  margin-bottom: 10%;
   @media (max-width: 800px) {
     flex-direction: column;
-    margin-top:4%;
+    margin-top: 4%;
   }
-
 `;
 
 export const ProfilePic = styled.img`
@@ -124,7 +126,7 @@ export const BioText = styled.div`
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 5px;
-  line-height:1.2;
+  line-height: 1.35;
   padding: 0 15px;
   color: #444649;
 
@@ -148,7 +150,7 @@ export const Hexagon = styled.div`
 
   &:before,
   &:after {
-    content: "";
+    content: '';
     position: absolute;
     width: 0;
     border-left: 60px solid transparent;

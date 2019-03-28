@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const ContactContainer = styled.div`
   background: #182327;
   padding: 100px 0 60px 0;
-  font-family: "Arvo", serif;
+  font-family: 'Open Sans';
 `;
 
 export const ContentWrapper = styled.div`
@@ -24,10 +24,10 @@ export const ContactHeader = styled.div`
     font-size: 1.4rem;
   }
   .header-bar {
-    width: 70px;
+    width: 64px;
     height: 4px;
-    background: #fefffe;
-    margin: 0 auto;
+    background: #444649;
+    margin: 7px auto;
   }
 `;
 

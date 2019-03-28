@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const HomeContainer = styled.div`
   background: #182327;
@@ -6,8 +6,7 @@ export const HomeContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
- font-family: 'Roboto Slab', serif;
+  font-family: 'Open Sans';
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -33,7 +32,6 @@ export const NameText = styled.div`
   line-height: 1.2;
   span {
     color: #b3dec1;
-    
   }
   @media (max-width: 900px) {
     font-size: 2.2rem;

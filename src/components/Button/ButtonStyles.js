@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const CustomButton = styled.div`
   width: ${props => props.width};
@@ -11,7 +11,7 @@ export const CustomButton = styled.div`
   margin: 10px;
   padding: 10px;
   font-size: ${props => props.fontSize};
-  font-family: "Roboto Slab", serif;
+  font-family: 'Open Sans';
   &:hover {
     background-color: ${props => props.bgColor};
     color: ${props => props.hoverFontColor};

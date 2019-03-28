@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const SecondaryBtn = styled.a`
+const SecondaryBtnStyle = styled.a`
   display: block;
   border-style: none;
   border-radius: 4px;
@@ -24,4 +24,6 @@ const SecondaryBtn = styled.a`
   background-repeat: no-repeat;
 `;
 
-export const SecondaryBtn = ({ name }) => <SecondaryBtn>{name}</SecondaryBtn>;
+export const SecondaryBtn = ({ name }) => (
+  <SecondaryBtnStyle>{name}</SecondaryBtnStyle>
+);

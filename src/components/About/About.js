@@ -1,8 +1,8 @@
-import React, { Component } from "react";
-import PDF from "../PDF/PDF";
-import Button from "../Button/Button";
-import { Element } from "react-scroll";
-import jbMiranda from '../../assets/jb.jpg'
+import React, { Component } from 'react';
+import { Element } from 'react-scroll';
+import PDF from '../PDF/PDF';
+import Button from '../Button/Button';
+import jbMiranda from '../../assets/jb.jpg';
 import {
   AboutContainer,
   ContentWrapper,
@@ -16,15 +16,18 @@ import {
   BioTextWrapper,
   ProfilePic,
   BioText,
-  Hexagon
-} from "./AboutStyles";
+  Hexagon,
+} from './AboutStyles';
+
 class About extends Component {
   state = {
-    modal: false
+    modal: false,
   };
 
   togglePDF = () => {
-    this.setState({ modal: !this.state.modal });
+    this.setState(prevState => ({
+      modal: !prevState.modal,
+    }));
   };
 
   render() {
@@ -60,7 +63,6 @@ class About extends Component {
                 />
               </BioTextWrapper>
             </BioWrapper>
-
 
             <IconContainer>
               <IconTextWrapper>

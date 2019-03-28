@@ -112,6 +112,10 @@ class Projects extends Component {
                     src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/68504a9d-line.png"
                     alt="line-dots"
                   />
+                  <img
+                    src="http://d9hhrg4mnvzow.cloudfront.net/go.taboola.com/how-taboola-works-fb/68504a9d-line.png"
+                    alt="line-dots"
+                  />
                 </div>
 
                 <div className="right-child">
@@ -147,6 +151,13 @@ class Projects extends Component {
                     onClick={this._toggleHandler('four')}
                     alt="project card"
                   />
+                  <div className="project-content">
+                    <span>06</span>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                      Porro neque corrupti sapiente. rerum.
+                    </p>
+                  </div>
                 </div>
               </ProjectSection>
             </ThumbnailContainer>

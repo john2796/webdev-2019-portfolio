@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import { Form, FormGroup, Input, Spinner } from "reactstrap";
-import { Element } from "react-scroll";
-import axios from "axios";
+import React, { Component } from 'react';
+import { Form, FormGroup, Input, Spinner } from 'reactstrap';
+import { Element } from 'react-scroll';
+import axios from 'axios';
 
+import Alert from 'react-s-alert';
 import {
   ContactContainer,
   ContentWrapper,
@@ -12,12 +13,12 @@ import {
   ButtonWrapper,
   SocialWrapper,
   Astyle,
-  CopyrightText
-} from "./ContactStyles";
-import Alert from "react-s-alert";
-import Button from "../Button/Button";
+  CopyrightText,
+} from './ContactStyles';
+import Button from '../Button/Button';
+
 class Contact extends Component {
-  state = { name: "", email: "", message: "", loading: false, errors: {} };
+  state = { name: '', email: '', message: '', loading: false, errors: {} };
 
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
@@ -30,10 +31,10 @@ class Contact extends Component {
     this.setState({ loading: true });
     const { name, email, message } = this.state;
     axios
-      .post("https://jbmiranda-server-01.herokuapp.com/api/contact", {
+      .post('https://jbmiranda-server-01.herokuapp.com/api/contact', {
         name,
         email,
-        message
+        message,
       })
       .then(() => {
         this.setState({ loading: false });
@@ -47,7 +48,7 @@ class Contact extends Component {
       .catch(err => {
         this.setState({ errors: err.response.data, loading: false });
       });
-    this.setState({ errors: {}, name: "", email: "", message: "" });
+    this.setState({ errors: {}, name: '', email: '', message: '' });
   };
 
   handleChange = e =>
@@ -66,7 +67,7 @@ class Contact extends Component {
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
           className="svgcolor-light"
-          style={{ background: "#182327" }}
+          style={{ background: '#182327' }}
         >
           <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white" />
         </svg>
@@ -79,7 +80,7 @@ class Contact extends Component {
             {this.state.loading && (
               <Spinner
                 md="auto"
-                style={{ margin: "0 auto", display: "block" }}
+                style={{ margin: '0 auto', display: 'block' }}
                 color="success"
               />
             )}
@@ -113,7 +114,7 @@ class Contact extends Component {
                     value={message}
                     placeholder="Message"
                     bsSize="lg"
-                    style={{ height: "200px" }}
+                    style={{ height: '200px' }}
                     onChange={this.handleChange}
                   />
                 </FormGroup>
