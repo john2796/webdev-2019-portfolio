@@ -1,7 +1,8 @@
 import React from "react";
 import { PDFObject } from "react-pdfobject";
 import { Modal } from "reactstrap";
-import jbresume from './../../assets/jbmiranda.pdf'
+
+import jbresume from "../../assets/jbmiranda-resume.pdf";
 // add pdf later
 class PDFModal extends React.Component {
   render() {
@@ -9,10 +10,7 @@ class PDFModal extends React.Component {
 
     return (
       <Modal isOpen={isOpen} toggle={toggle} size="lg">
-        <PDFObject
-          url={jbresume}
-          height="1080px"
-        />
+        <PDFObject url={jbresume} height="1080px" />
       </Modal>
     );
   }

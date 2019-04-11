@@ -4,9 +4,9 @@ import Home from "./components/Home/Home";
 import Projects from "./components/Projects/Projects";
 import About from "./components/About/About";
 import Contact from "./components/Contact/Contact";
-import NavBar from "./components/Nav/NavBar";
 import Sticky from "react-sticky-el";
 import Alert from "react-s-alert";
+import NavBar from "./components/Nav/Navbar";
 
 class App extends Component {
   render() {

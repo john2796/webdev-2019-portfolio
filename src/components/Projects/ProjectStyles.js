@@ -105,7 +105,8 @@ export const ButtonWrapper = styled.div`
 export const ProjectSection = styled.section`
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
 
   img {
     max-width: 100%;
