@@ -1,9 +1,9 @@
-import styled from 'styled-components';
-import { ModalHeader } from 'reactstrap';
+import styled from "styled-components";
+import { ModalHeader } from "reactstrap";
 
 export const ProjectContainer = styled.div`
   background: #ffff;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
 
   img {
     object-fit: cover;
@@ -71,14 +71,14 @@ export const ModalTextWrapper = styled.div`
 `;
 
 export const ModalTitle = styled.h2`
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 1.6rem;
   font-weight: 600;
   color: #444649;
 `;
 
 export const ModalSubTitle = styled.h4`
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-size: 1.1rem;
   font-weight: bold;
   opacity: 0.7;
@@ -86,7 +86,7 @@ export const ModalSubTitle = styled.h4`
 `;
 
 export const ModalDescription = styled.p`
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   color: #444649;
   font-size: 1.1rem;
 `;
@@ -103,89 +103,11 @@ export const ButtonWrapper = styled.div`
 `;
 
 export const ProjectSection = styled.section`
-  @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
   display: flex;
   justify-content: space-between;
 
   img {
     max-width: 100%;
-  }
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    align-items: center;
-    border: 1px solid red;
-
-    .first-project {
-      margin: 0;
-    }
-  }
-
-  /* --------------------------- Left Child --------------------------- */
-  .left-child {
-    .first-project {
-      margin-top: 100px;
-    }
-  }
-  /* --------------------------- Prjoject message content --------------------------- */
-  .project-content {
-    width: 70%;
-    margin: 0 auto;
-    margin-bottom: 52px;
-    @media (max-width: 900px) {
-      width: 90%;
-      margin-bottom: 0;
-    }
-  }
-  .project-content span {
-    font-size: 48px;
-    font-family: 'Open Sans';
-    color: rgb(23, 123, 248);
-    font-weight: 600;
-  }
-  .project-content p {
-    font-family: 'Open Sans';
-    font-size: 18px;
-    color: rgb(51, 51, 51);
-    font-weight: 600;
-  }
-  /* --------------------------- Middle Child --------------------------- */
-  .middle-child {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    .design-circle {
-      min-width: 30px;
-      margin-top: 100px;
-    }
-    .second-line {
-      height: 5px;
-    }
-    .design-circle-last {
-      margin-top: -3px;
-    }
-    .one {
-      position: relative;
-      bottom: 1257px;
-    }
-    .two {
-      position: relative;
-      bottom: 1000px;
-    }
-    .three {
-      position: relative;
-      bottom: 701px;
-    }
-    .four {
-      position: relative;
-      bottom: 463px;
-    }
-    @media (max-width: 900px) {
-      display: none;
-    }
-  }
-  /* --------------------------- Right Child --------------------------- */
-
-  .right-child {
   }
 `;
