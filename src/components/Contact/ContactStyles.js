@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const ContactContainer = styled.div`
   background: #182327;
   padding: 100px 0 60px 0;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
+  zoom: 80%;
 `;
 
 export const ContentWrapper = styled.div`

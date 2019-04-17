@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const HomeContainer = styled.div`
   background: #182327;
@@ -6,13 +6,14 @@ export const HomeContainer = styled.div`
 `;
 
 export const HeaderContainer = styled.div`
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   position: relative;
+  zoom: 90%;
   top: 35%;
 `;
 export const TextContainer = styled.div`

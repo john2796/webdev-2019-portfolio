@@ -4,7 +4,7 @@ import { ModalHeader } from "reactstrap";
 export const ProjectContainer = styled.div`
   background: #ffff;
   font-family: "Open Sans";
-
+  zoom: 80%;
   img {
     object-fit: cover;
   }

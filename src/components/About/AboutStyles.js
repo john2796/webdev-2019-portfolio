@@ -1,9 +1,10 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const AboutContainer = styled.div`
   background: #fffdff;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   padding: 100px 0;
+  zoom: 80%;
 `;
 
 export const ContentWrapper = styled.div`
@@ -150,7 +151,7 @@ export const Hexagon = styled.div`
 
   &:before,
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 0;
     border-left: 60px solid transparent;

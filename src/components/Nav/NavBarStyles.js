@@ -7,6 +7,7 @@ export const NavBarContainer = styled.div`
   background: #182327;
   border-bottom: 3px solid #b3dec1;
   font-family: "Open Sans";
+  zoom: 80%;
 `;
 
 export const NavLinkWrapper = styled.div`
