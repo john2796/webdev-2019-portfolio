@@ -46,7 +46,6 @@ export const ThumbnailContainer = styled.div`
 export const Thumbnail = styled.img`
   margin: 15px;
   transition: transform 0.2s ease-out 0s;
-
   &:hover {
     cursor: pointer;
     transition: 0.4s;
@@ -110,5 +109,16 @@ export const ProjectSection = styled.section`
 
   img {
     max-width: 100%;
+  }
+  .image-card-wrapper {
+    h4 {
+      text-align: center;
+      color: #333;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: -40px;
+    }
   }
 `;

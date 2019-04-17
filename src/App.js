@@ -11,23 +11,23 @@ import NavBar from "./components/Nav/Navbar";
 class App extends Component {
   render() {
     return (
-    <Fragment>
-    <Home />
-    <Sticky className="Sticky">
-    <NavBar />
-    </Sticky>
-    <About />
-    <Projects />
-    <Contact />
+      <Fragment>
+        <Home />
+        <Sticky className="Sticky">
+          <NavBar />
+        </Sticky>
+        <About />
+        <Projects />
+        <Contact />
 
-    <Alert
-    stack={{ limit: 3, spacing: 50 }}
-    position="top-right"
-    effect="slide"
-    />
-    </Fragment>
+        <Alert
+          stack={{ limit: 3, spacing: 50 }}
+          position="top-right"
+          effect="slide"
+        />
+      </Fragment>
     );
-}
+  }
 }
 
 export default App;

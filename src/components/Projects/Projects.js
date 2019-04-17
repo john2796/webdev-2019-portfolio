@@ -61,53 +61,75 @@ class Projects extends Component {
 
             <ThumbnailContainer>
               <ProjectSection>
-                <Thumbnail
-                  src={img9}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("nine")}
-                  alt="project card"
-                />
-                <Thumbnail
-                  src={img7}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("seven")}
-                  alt="project card"
-                />
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img9}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("nine")}
+                    alt="project card"
+                  />
+                  <h4>lad network</h4>
+                </div>
 
-                <Thumbnail
-                  src={img5}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("five")}
-                  alt="project card"
-                />
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img7}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("seven")}
+                    alt="project card"
+                  />
+                  <h4>moviedb19</h4>
+                </div>
 
-                <Thumbnail
-                  src={img3}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("three")}
-                  alt="project card"
-                />
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img5}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("five")}
+                    alt="project card"
+                  />
+                  <h4>los angeles experts</h4>
+                </div>
 
-                <Thumbnail
-                  src={img1}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("one")}
-                  alt="project card"
-                />
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img3}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("three")}
+                    alt="project card"
+                  />
+                  <h4>miranda restaurant</h4>
+                </div>
 
-                <Thumbnail
-                  src={img2}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("two")}
-                  alt="project card"
-                />
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img1}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("one")}
+                    alt="project card"
+                  />
+                  <h4>Instagram clone</h4>
+                </div>
 
-                <Thumbnail
-                  src={img4}
-                  style={thumbSize}
-                  onClick={this._toggleHandler("four")}
-                  alt="project card"
-                />
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img2}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("two")}
+                    alt="project card"
+                  />
+                  <h4>use my tool</h4>
+                </div>
+
+                <div className="image-card-wrapper">
+                  <Thumbnail
+                    src={img4}
+                    style={thumbSize}
+                    onClick={this._toggleHandler("four")}
+                    alt="project card"
+                  />
+                  <h4>nasa</h4>
+                </div>
               </ProjectSection>
             </ThumbnailContainer>
 
