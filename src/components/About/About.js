@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import { Element } from 'react-scroll';
-import PDF from '../PDF/PDF';
-import Button from '../Button/Button';
-import jbMiranda from '../../assets/jb.jpg';
+import React, { Component } from "react";
+import { Element } from "react-scroll";
+import PDF from "../PDF/PDF";
+import Button from "../Button/Button";
+import jbMiranda from "../../assets/jb.jpg";
 import {
   AboutContainer,
   ContentWrapper,
@@ -16,17 +16,17 @@ import {
   BioTextWrapper,
   ProfilePic,
   BioText,
-  Hexagon,
-} from './AboutStyles';
+  Hexagon
+} from "./AboutStyles";
 
 class About extends Component {
   state = {
-    modal: false,
+    modal: false
   };
 
   togglePDF = () => {
     this.setState(prevState => ({
-      modal: !prevState.modal,
+      modal: !prevState.modal
     }));
   };
 
@@ -44,11 +44,11 @@ class About extends Component {
               <ProfilePic src={jbMiranda} />
               <BioTextWrapper>
                 <BioText>
-                  Hello. I'm John, a web developer in San Diego. I strive to
-                  learn, improve, and challenge myself every day. What gets me
-                  up each morning is knowing the website I create today is
-                  better than the website I created yesterday. I want to work
-                  with inspiring people who feel the same way I do.
+                  Hello. I'm John, Web developer who strives to learn, and take
+                  on challenges daily. Experienced in mentoring other
+                  developers, and teaching programming Consistently improves
+                  upon projects and designs, seeking to inspire people with easy
+                  to navigate web design
                 </BioText>
                 <Button
                   name="View Resume"
